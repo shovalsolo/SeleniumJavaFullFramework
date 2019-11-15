@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>														<!--Log4j2 configuration file  -->
+<Configuration status="warn">
+    <Properties>
+        <Property name="basePath">logs</Property>																								<!-- Logs location will be at the parent project folder -->
+    </Properties>
+ 
+    <Appenders>
+        <RollingFile name="fileLogger" fileName="${basePath}/MyLogsFromLogs4j2XML.log" filePattern="${basePath}/app-info-%d{yyyy-MM-dd}.log">	<!-- Setting the name of the log -->
+            <PatternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>													<!-- Setting log time date formation -->
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />																		<!--  -->
+            </Policies>
+        </RollingFile>
+ 
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout   pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />											<!--  -->
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="demo" level="debug" additivity="true">																					<!-- Setting the package name for the file to log and log level to file-->
+            <appender-ref ref="fileLogger" level="debug" />																						<!-- Setting the log level to file-->
+        </Logger>
+        <Root level="debug" additivity="false">																									<!-- Setting the log level to console-->
+            <appender-ref ref="console" />
+        </Root>
+    </Loggers>
+</Configuration>

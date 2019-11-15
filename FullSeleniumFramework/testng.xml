@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>								<!-- Running class googleSearchWithTestNG and googleSearchWithTestNG2 -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1" parallel="classes">
+	<test thread-count="5" name="Test1" parallel="classes">
+		<classes>
+			<class name="test.googleSearchWithTestNG" />			<!-- Will execute all the class -->
+			<class name="test.googleSearchWithTestNG2">				<!-- Will execute part of the class -->
+				<methods>											<!-- methods will contain the included and excluded functions in the class -->
+					<include name="googleSearchTest1"></include>	<!-- Will run -->
+					<exclude name="googleSearchTest"></exclude>		<!-- Will not run -->
+				</methods>
+			</class>
+		</classes>
+	</test> 														<!-- Test1 -->
+</suite>															<!-- Suite1 -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>							<!-- Running the package listeners and all the classes under the package -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>															<!-- Running class TestNGListenerDemo -->
+		<listener class-name="listeners.TestNGListeneres"></listener>	<!-- Set the location of the class with the listeners functionality -->
+	</listeners>
+	<test thread-count="5" name="Test">
+		<packages>
+			<package name="listeners" />
+		</packages>
+	</test> 														<!-- Test -->
+</suite> 														<!-- Suite -->

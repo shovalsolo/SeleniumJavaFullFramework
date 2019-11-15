@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>									<!-- Running class TestNGListenerDemo2 and TestNGListenerDemo2-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>															<!-- Running class TestNGListenerDemo -->
+		<listener class-name="listeners.TestNGListeneres"></listener>	<!-- Set the location of the class with the listeners functionality -->
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="listeners.TestNGListenerDemo2" />				<!-- This is the class that this fill will run listeners.TestNGListenerDemo2-->
+			<class name="listeners.TestNGListenerDemo3" />				<!-- This is the class that this fill will run listeners.TestNGListenerDemo3-->
+		</classes>
+	</test> 															<!-- Test -->
+</suite> 	
