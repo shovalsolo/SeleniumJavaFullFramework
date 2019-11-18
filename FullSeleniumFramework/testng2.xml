@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>							<!-- Running the package listeners and all the classes under the package -->
+<?xml version="1.0" encoding="UTF-8"?>							<!-- Running the package listeners and all the classes under the package this file is running "TestNGListeneres" -->
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<listeners>															<!-- Running class TestNGListenerDemo -->

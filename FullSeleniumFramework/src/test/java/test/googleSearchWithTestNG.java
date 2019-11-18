@@ -1,5 +1,8 @@
 /* 
  * Class that is helping  googleSearchWithTestNG sending input from googleSearchWithTestNG to googleSearchWithTestNGPage using TestNG to run the test  %%% for impotent
+ * 
+ * To run this file need to run testng.xml
+ * 
  */
 
 package test;
@@ -27,7 +30,7 @@ public class googleSearchWithTestNG {
 	}
 	
 	@Test																			//TestNG before test method							%%%
-	public  void googleSearchTest() {												//A method that has all the test steps
+	public void googleSearchTest() {												//A method that has all the test steps
 		
 		driver.get("https://google.com/"); 	
 		

@@ -2,6 +2,8 @@
  * Class that is helping  googleSearchWithTestNG sending input from googleSearchWithTestNG to googleSearchWithTestNGPage using TestNG to run the test  %%% for impotent
  * 
  *  This class is using Class PropertiesFile that is reading from "config.properties" that is holding the parameters for the test 
+ *  
+ *  To run this file need to run testng.xml
  */
 
 package test;

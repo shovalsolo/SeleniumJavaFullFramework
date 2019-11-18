@@ -1,5 +1,7 @@
 /* 
  * This is a class that is holding the listeners functionality being called from TestNGListenerDemo
+ * 
+ * To run this file need to run testng2.xml
  */
 
 package listeners;
