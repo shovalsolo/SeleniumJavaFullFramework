@@ -8,55 +8,16 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num attn">3</td><td class="num">0</td><td class="num attn">2</td><td class="num">26,634</td><td></td><td></td></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">85</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">listeners.TestNGListenerDemo</td><td><a href="#m0">test2</a></td><td rowspan="1">1573851807824</td><td rowspan="1">3</td></tr><tr class="failedodd"><td rowspan="1">listeners.TestNGListenerDemo2</td><td><a href="#m1">test2</a></td><td rowspan="1">1573851807845</td><td rowspan="1">9007</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">listeners.TestNGListenerDemo</td><td><a href="#m2">test3</a></td><td rowspan="1">1573851807830</td><td rowspan="1">2</td></tr><tr class="skippedodd"><td rowspan="1">listeners.TestNGListenerDemo2</td><td><a href="#m3">test3</a></td><td rowspan="1">1573851816855</td><td rowspan="1">2</td></tr><tr class="skippedeven"><td rowspan="1">listeners.TestNGListenerDemo3</td><td><a href="#m4">test6</a></td><td rowspan="1">1573851834405</td><td rowspan="1">1</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">listeners.TestNGListenerDemo</td><td><a href="#m5">test1</a></td><td rowspan="1">1573851807810</td><td rowspan="1">11</td></tr><tr class="passedodd"><td rowspan="1">listeners.TestNGListenerDemo2</td><td><a href="#m6">test1</a></td><td rowspan="1">1573851807837</td><td rowspan="1">2</td></tr><tr class="passedeven"><td rowspan="2">listeners.TestNGListenerDemo3</td><td><a href="#m7">test4</a></td><td rowspan="1">1573851816859</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m8">test5</a></td><td rowspan="1">1573851816864</td><td rowspan="1">17540</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">demo.TestNGPriorityDemo</td><td><a href="#m0">test1</a></td><td rowspan="1">1574110836249</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m1">test2</a></td><td rowspan="1">1574110836212</td><td rowspan="1">13</td></tr><tr class="passedeven"><td><a href="#m2">test3</a></td><td rowspan="1">1574110836230</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m3">test4</a></td><td rowspan="1">1574110836234</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m4">test5</a></td><td rowspan="1">1574110836238</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m5">test6</a></td><td rowspan="1">1574110836244</td><td rowspan="1">2</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">listeners.TestNGListenerDemo#test2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:55)
-	at junit.framework.Assert.assertTrue(Assert.java:22)
-	at junit.framework.Assert.assertTrue(Assert.java:31)
-	at listeners.TestNGListenerDemo.test2(TestNGListenerDemo.java:24)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">listeners.TestNGListenerDemo2#test2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;www&apos;]&quot;}
-  (Session info: chrome=75.0.3770.100)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-6M9B03E&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Solomon\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 26b663a00e0ceed57254f1254b8f1055
-*** Element info: {Using=name, value=www}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at listeners.TestNGListenerDemo2.test2(TestNGListenerDemo2.java:33)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">listeners.TestNGListenerDemo#test3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: This test is skipped
-	at listeners.TestNGListenerDemo.test3(TestNGListenerDemo.java:30)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">listeners.TestNGListenerDemo2#test3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: This test is skipped
-	at listeners.TestNGListenerDemo2.test3(TestNGListenerDemo2.java:46)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">listeners.TestNGListenerDemo3#test6</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: This test is skipped
-	at listeners.TestNGListenerDemo3.test6(TestNGListenerDemo3.java:45)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">listeners.TestNGListenerDemo#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">listeners.TestNGListenerDemo2#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">listeners.TestNGListenerDemo3#test4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">listeners.TestNGListenerDemo3#test5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">demo.TestNGPriorityDemo#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">demo.TestNGPriorityDemo#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">demo.TestNGPriorityDemo#test3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">demo.TestNGPriorityDemo#test4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">demo.TestNGPriorityDemo#test5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">demo.TestNGPriorityDemo#test6</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
