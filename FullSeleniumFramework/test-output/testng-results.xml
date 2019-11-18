@@ -1,106 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="18801" started-at="2019-11-18T17:22:58 EST" finished-at="2019-11-18T17:23:17 EST">
+  <suite name="Suite1" duration-ms="66" started-at="2019-11-18T18:50:02 EST" finished-at="2019-11-18T18:50:02 EST">
     <groups>
+      <group name="windows.regression">
+        <method signature="TestNGGroupDemo2.test2()[pri:0, instance:demo.TestNGGroupDemo2@30b8a058]" name="test2" class="demo.TestNGGroupDemo2"/>
+      </group> <!-- windows.regression -->
+      <group name="windows.sanity">
+        <method signature="TestNGGroupDemo2.test5()[pri:0, instance:demo.TestNGGroupDemo2@30b8a058]" name="test5" class="demo.TestNGGroupDemo2"/>
+      </group> <!-- windows.sanity -->
     </groups>
-    <test name="TestChrome" duration-ms="17868" started-at="2019-11-18T17:22:58 EST" finished-at="2019-11-18T17:23:16 EST">
-      <class name="demo.TestNGMultiBrowserDemo">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:demo.TestNGMultiBrowserDemo@131276c2]" name="setUp" is-config="true" duration-ms="6566" started-at="2019-11-18T17:22:58 EST" finished-at="2019-11-18T17:23:04 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Test1" duration-ms="66" started-at="2019-11-18T18:50:02 EST" finished-at="2019-11-18T18:50:02 EST">
+      <class name="demo.TestNGGroupDemo2">
+        <test-method status="PASS" signature="test2()[pri:0, instance:demo.TestNGGroupDemo2@30b8a058]" name="test2" duration-ms="11" started-at="2019-11-18T18:50:02 EST" finished-at="2019-11-18T18:50:02 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:demo.TestNGMultiBrowserDemo@131276c2]" name="test1" duration-ms="6175" started-at="2019-11-18T17:23:04 EST" finished-at="2019-11-18T17:23:11 EST">
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:demo.TestNGGroupDemo2@30b8a058]" name="test5" duration-ms="0" started-at="2019-11-18T18:50:02 EST" finished-at="2019-11-18T18:50:02 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:demo.TestNGMultiBrowserDemo@131276c2]" name="tearDown" is-config="true" duration-ms="5106" started-at="2019-11-18T17:23:11 EST" finished-at="2019-11-18T17:23:16 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- demo.TestNGMultiBrowserDemo -->
-    </test> <!-- TestChrome -->
-    <test name="TestFirefox" duration-ms="18801" started-at="2019-11-18T17:22:58 EST" finished-at="2019-11-18T17:23:17 EST">
-      <class name="demo.TestNGMultiBrowserDemo">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:demo.TestNGMultiBrowserDemo@646d64ab]" name="setUp" is-config="true" duration-ms="10593" started-at="2019-11-18T17:22:58 EST" finished-at="2019-11-18T17:23:08 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:demo.TestNGMultiBrowserDemo@646d64ab]" name="test1" duration-ms="6177" started-at="2019-11-18T17:23:08 EST" finished-at="2019-11-18T17:23:15 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:demo.TestNGMultiBrowserDemo@646d64ab]" name="tearDown" is-config="true" duration-ms="2005" started-at="2019-11-18T17:23:15 EST" finished-at="2019-11-18T17:23:17 EST">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-6M9B03E', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7424, moz:profile: C:\Users\Solomon\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 36813f4e-c4dc-48d8-b3e8-a83444ab106a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-6M9B03E', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7424, moz:profile: C:\Users\Solomon\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 36813f4e-c4dc-48d8-b3e8-a83444ab106a
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
-at demo.TestNGMultiBrowserDemo.tearDown(TestNGMultiBrowserDemo.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-at org.testng.TestRunner.afterRun(TestRunner.java:853)
-at org.testng.TestRunner.run(TestRunner.java:594)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- demo.TestNGMultiBrowserDemo -->
-    </test> <!-- TestFirefox -->
+        </test-method> <!-- test5 -->
+      </class> <!-- demo.TestNGGroupDemo2 -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite1 -->
 </testng-results>

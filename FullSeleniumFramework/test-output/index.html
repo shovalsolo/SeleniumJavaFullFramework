@@ -49,17 +49,17 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite1">
-                    <span>C:\Users\Solomon\git\SeleniumJavaFullFramework\FullSeleniumFramework\testng3.xml</span>
+                    <span>C:\Users\Solomon\git\SeleniumJavaFullFramework\FullSeleniumFramework\testng6.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite1">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite1">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,12 +102,12 @@
                     <div class="method-list-content passed suite-Suite1">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="demo.TestNGMultiBrowserDemo" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="demo.TestNGGroupDemo2" hash-for-method="test2">test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="demo.TestNGMultiBrowserDemo" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="demo.TestNGGroupDemo2" hash-for-method="test5">test5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite1 -->
@@ -125,21 +125,21 @@
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">demo.TestNGMultiBrowserDemo</span>
+              <span class="class-name">demo.TestNGGroupDemo2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,31 +147,23 @@
         </div> <!-- panel Suite1 -->
         <div panel-name="test-xml-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Solomon\git\SeleniumJavaFullFramework\FullSeleniumFramework\testng3.xml</span>
+            <span class="header-content">C:\Users\Solomon\git\SeleniumJavaFullFramework\FullSeleniumFramework\testng6.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite1&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;TestChrome&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite1&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;windows.*&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;demo.TestNGMultiBrowserDemo&quot;/&gt;
+      &lt;class name=&quot;demo.TestNGGroupDemo2&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestChrome --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;TestFirefox&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;Firefox&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;demo.TestNGMultiBrowserDemo&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestFirefox --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;TestIE&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;ie&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;demo.TestNGMultiBrowserDemo&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestIE --&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,13 +175,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestChrome (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">TestFirefox (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">TestIE (1 class)</span>
+                <span class="test-name">Test1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,6 +185,22 @@
             <span class="header-content">Groups for Suite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">windows.regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">windows.sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite1" class="panel">
@@ -217,18 +219,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test1')
-data.setCell(0, 2, 'demo.TestNGMultiBrowserDemo')
-data.setCell(0, 3, 6177);
+data.setCell(0, 1, 'test2')
+data.setCell(0, 2, 'demo.TestNGGroupDemo2')
+data.setCell(0, 3, 11);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test1')
-data.setCell(1, 2, 'demo.TestNGMultiBrowserDemo')
-data.setCell(1, 3, 6175);
+data.setCell(1, 1, 'test5')
+data.setCell(1, 2, 'demo.TestNGGroupDemo2')
+data.setCell(1, 3, 0);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 11 ms</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -243,9 +245,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo.TestNGGroupDemo2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test1</span>
+                <br/>
+                <span class="ignored-method-name">test3</span>
+                <br/>
+                <span class="ignored-method-name">test4</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite1" class="panel">
@@ -254,47 +267,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">demo.TestNGMultiBrowserDemo</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUp(ie)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">setUp(Firefox)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              <div class="chronological-class-name">demo.TestNGGroupDemo2</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">2273 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">2282 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">6567 ms</span>
+                <span class="method-name">test2</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">10594 ms</span>
+                <span class="method-name">test5</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">12750 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">16773 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

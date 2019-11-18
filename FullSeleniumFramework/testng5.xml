@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>								<!-- Running class demo.TestNGGroupDemo1 -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+	<test thread-count="5" name="Test1">
+		<groups>
+
+			<define name="Regression1">								<!-- Creating define tag it is a meta group in the test Meta group has a few groups -->
+				<include name="regression"></include>				<!-- Creating include tag in the define tag -->
+				<include name="smoke"></include>
+			</define>
+
+			<run>
+				<include name="Regression1"></include>				<!-- Adding the meta group that includes 2 groups -->
+			</run>
+
+		</groups>
+
+		<classes>
+			<class name="demo.TestNGGroupDemo1" />
+		</classes>
+	</test> 														<!-- Test1 -->
+</suite> 															<!-- Suite1 -->

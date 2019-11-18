@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>						<!-- Running class demo.TestNGGroupDemo -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+	<test thread-count="5" name="Test1">
+		<groups>
+
+			<run>											<!-- Creating run tag in the groups what and including what tags to run -->
+				<include name="sanity"></include>			<!-- Creating include tag in the run tag and giving the names of the groups 
+					to run will run test 1,2,3 -->
+				<exclude name="regression"></exclude>		<!-- Creating include tag in the run tag and giving the names of the groups 
+					NOT to run will NOT run test 3,4,5 -->
+			</run>
+
+		</groups>
+		<classes>
+			<class name="demo.TestNGGroupDemo" />			<!-- Running class demo.TestNGGroupDemo -->
+		</classes>
+	</test> 												<!-- Test1 -->
+</suite> 													<!-- Suite1 -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>						<!-- Running class demo.TestNGGroupDemo2 example for regular expression in group -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+	<test thread-count="5" name="Test1">
+
+		<groups>
+
+			<run>
+				<include name="windows.*"></include>		<!-- Group with regular expression  will run all windows groups-->
+			</run>
+
+		</groups>
+
+		<classes>
+			<class name="demo.TestNGGroupDemo2" />
+		</classes>
+	</test> <!-- Test1 -->
+</suite> <!-- Suite1 -->

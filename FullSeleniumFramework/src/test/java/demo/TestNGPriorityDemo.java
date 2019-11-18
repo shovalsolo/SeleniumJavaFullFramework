@@ -1,5 +1,7 @@
 /* 
- * Will run according to the priority from low to high the lowest has the highest priority -- the second parameter for order is alphabetical name of the functions -- no priority is equal to priority zero
+ * Will run according to the priority from low to high the lowest has the highest priority -- 
+ * the second parameter for order is alphabetical name of the functions -- 
+ * no priority is equal to priority zero
  */
 
 package demo;
