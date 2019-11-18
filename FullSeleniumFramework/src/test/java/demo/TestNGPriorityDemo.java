@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 
 public class TestNGPriorityDemo {
 	
-
 	@Test(priority = 1)						//Will run according to the priority from low to high the lowest has the highest priority will be last
 	public void test1() {
 		System.out.println("From test 1");	//
@@ -33,6 +32,5 @@ public class TestNGPriorityDemo {
 	public void test5() {
 		System.out.println("From test 5");	//
 	}
-
 
 }
