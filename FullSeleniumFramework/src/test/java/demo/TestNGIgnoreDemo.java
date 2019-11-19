@@ -1,7 +1,6 @@
 /* 
- * Will run test with parameters from testng8.xml -- 
- * To run this file need to run testng8.xml
- *  
+ * Will run test and will ignore running test3 -- 
+ * Also possible to ignore the whole class
  */
 
 package demo;
