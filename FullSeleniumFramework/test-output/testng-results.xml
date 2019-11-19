@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="66" started-at="2019-11-18T18:50:02 EST" finished-at="2019-11-18T18:50:02 EST">
+  <suite name="Suite1" duration-ms="70" started-at="2019-11-19T12:14:48 EST" finished-at="2019-11-19T12:14:48 EST">
     <groups>
-      <group name="windows.regression">
-        <method signature="TestNGGroupDemo2.test2()[pri:0, instance:demo.TestNGGroupDemo2@30b8a058]" name="test2" class="demo.TestNGGroupDemo2"/>
-      </group> <!-- windows.regression -->
-      <group name="windows.sanity">
-        <method signature="TestNGGroupDemo2.test5()[pri:0, instance:demo.TestNGGroupDemo2@30b8a058]" name="test5" class="demo.TestNGGroupDemo2"/>
-      </group> <!-- windows.sanity -->
     </groups>
-    <test name="Test1" duration-ms="66" started-at="2019-11-18T18:50:02 EST" finished-at="2019-11-18T18:50:02 EST">
-      <class name="demo.TestNGGroupDemo2">
-        <test-method status="PASS" signature="test2()[pri:0, instance:demo.TestNGGroupDemo2@30b8a058]" name="test2" duration-ms="11" started-at="2019-11-18T18:50:02 EST" finished-at="2019-11-18T18:50:02 EST">
+    <test name="Test1" duration-ms="70" started-at="2019-11-19T12:14:48 EST" finished-at="2019-11-19T12:14:48 EST">
+      <class name="demo.TestNGParametersDemo">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:demo.TestNGParametersDemo@a7e666]" name="test" duration-ms="10" started-at="2019-11-19T12:14:48 EST" finished-at="2019-11-19T12:14:48 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Roni]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test5()[pri:0, instance:demo.TestNGGroupDemo2@30b8a058]" name="test5" duration-ms="0" started-at="2019-11-18T18:50:02 EST" finished-at="2019-11-18T18:50:02 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test5 -->
-      </class> <!-- demo.TestNGGroupDemo2 -->
+        </test-method> <!-- test -->
+      </class> <!-- demo.TestNGParametersDemo -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite1 -->
 </testng-results>

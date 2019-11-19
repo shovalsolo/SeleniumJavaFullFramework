@@ -8,5 +8,5 @@
 		<packages>
 			<package name="listeners" />
 		</packages>
-	</test> 														<!-- Test -->
-</suite> 														<!-- Suite -->
+	</test> 															<!-- Test -->
+</suite> 																<!-- Suite -->
