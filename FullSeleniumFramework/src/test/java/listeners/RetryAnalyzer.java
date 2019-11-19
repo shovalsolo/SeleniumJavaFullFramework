@@ -1,3 +1,7 @@
+/* 
+ * This class is called when tests fail and need to be rerun again
+ */
+
 package listeners;
 
 import org.testng.IRetryAnalyzer;
