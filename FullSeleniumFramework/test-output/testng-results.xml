@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="70" started-at="2019-11-19T12:14:48 EST" finished-at="2019-11-19T12:14:48 EST">
+  <suite name="Default suite" duration-ms="63" started-at="2019-11-19T16:03:18 EST" finished-at="2019-11-19T16:03:18 EST">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="70" started-at="2019-11-19T12:14:48 EST" finished-at="2019-11-19T12:14:48 EST">
-      <class name="demo.TestNGParametersDemo">
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:demo.TestNGParametersDemo@a7e666]" name="test" duration-ms="10" started-at="2019-11-19T12:14:48 EST" finished-at="2019-11-19T12:14:48 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Automation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Roni]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="63" started-at="2019-11-19T16:03:18 EST" finished-at="2019-11-19T16:03:18 EST">
+      <class name="demo.TestNGIgnoreDemo">
+        <test-method status="PASS" signature="test1()[pri:0, instance:demo.TestNGIgnoreDemo@1efed156]" name="test1" duration-ms="11" started-at="2019-11-19T16:03:18 EST" finished-at="2019-11-19T16:03:18 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- demo.TestNGParametersDemo -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite1 -->
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:demo.TestNGIgnoreDemo@1efed156]" name="test2" duration-ms="1" started-at="2019-11-19T16:03:18 EST" finished-at="2019-11-19T16:03:18 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:demo.TestNGIgnoreDemo@1efed156]" name="test4" duration-ms="1" started-at="2019-11-19T16:03:18 EST" finished-at="2019-11-19T16:03:18 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+      </class> <!-- demo.TestNGIgnoreDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
