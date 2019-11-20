@@ -8,7 +8,7 @@ package demo;
 
 import org.testng.annotations.Test;
 
-@Test(groups= {"AllClassTests"})					//Tag at the class level to run all
+@Test(groups= {"AllClassTests"})					//Tag at the class level to run all test cases
 public class TestNGGroupDemo3 {
 	
 	@Test(groups = {"sanity"})

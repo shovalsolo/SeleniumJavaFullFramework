@@ -34,5 +34,4 @@ public class TestNGPriorityDemo {
 	public void test5() {
 		System.out.println("From test 5");	//
 	}
-
 }

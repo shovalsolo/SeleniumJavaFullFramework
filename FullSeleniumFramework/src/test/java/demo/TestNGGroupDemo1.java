@@ -2,6 +2,7 @@
  * Will run test groups according to the testNG groups in testng5.xml -- 
  * To run this file need to run testng5.xml
  * Example of Meta group the includes a few tags in one meta group
+ * Meta group can include a few group tags under it
  */
 
 package demo;

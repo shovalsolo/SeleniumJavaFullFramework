@@ -1,12 +1,9 @@
 /* 
  * Explicit Wait is applicable specific elements
  * Explicit Wait can be set for a specific condition
- * 
  */
 
 package demo;
-
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -43,7 +40,5 @@ public class ExplicitWaitDemo {
 		
 		driver.close();
 		driver.quit();
-		
 	}
-
 }

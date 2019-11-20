@@ -21,5 +21,4 @@ public class TestNGParametersDemo {
 		System.out.println("Name is  :"+name);
 		System.out.println("What about abc  :"+abc);					//When not passing parameters it will be null if this parameter doesn't have an default
 	}
-
 }

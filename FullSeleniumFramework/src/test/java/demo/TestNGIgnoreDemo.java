@@ -22,7 +22,7 @@ public class TestNGIgnoreDemo {
 	}
 	
 	@Test
-	@Ignore										//Possible to ignore a single test
+	@Ignore										//Possible to ignore a single test this will ignore test3
 	public void test3() {
 		System.out.println("Hi from test3 ");
 	}

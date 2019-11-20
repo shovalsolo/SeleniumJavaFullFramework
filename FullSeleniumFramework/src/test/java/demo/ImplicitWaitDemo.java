@@ -1,7 +1,6 @@
 /* 
  * Implicit Wait is applicable for the entire session of the browser
  * Implicit Wait is used to define a time unit when the webdriver should wait before throwing "No such Element" Exception
- * 
  * You can set is in the beginning of the function and it will be applicable for the entire session of the test
  * Default pull time of Implicit Wait is 250 ms
  */
@@ -30,7 +29,7 @@ public class ImplicitWaitDemo {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	//A wait that will wait 10 seconds the default is zero and is applicable for the entire session
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	//A wait that will wait 10 seconds the default is zero and is applicable for the entire session %%%
 		
 		driver.get("https://google.com");									//Navigate to url					
 		driver.findElement(By.name("q")).sendKeys("Automation test");		//Sending keys to field

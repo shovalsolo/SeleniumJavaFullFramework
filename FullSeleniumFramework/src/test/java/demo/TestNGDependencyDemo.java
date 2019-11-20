@@ -51,5 +51,4 @@ public class TestNGDependencyDemo {
 	public void test8() {
 		System.out.println("Hi from test8 Groups - sanity run as priority 0");
 	}
-
 }

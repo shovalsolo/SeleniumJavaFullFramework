@@ -1,7 +1,7 @@
 /* 
  * Will run test groups according to the testNG groups in testng4.xml -- 
  * To run this file need to run testng4.xml
- * Example of include exclude groups
+ * Example of include exclude groups from testng4.xml 
  */
 
 package demo;

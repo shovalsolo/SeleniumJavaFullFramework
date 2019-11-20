@@ -39,7 +39,6 @@ public class TestNGMultiBrowserDemo {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
-	
 	}
 
 	@Test
@@ -58,5 +57,4 @@ public class TestNGMultiBrowserDemo {
 		driver.quit();
 		System.out.println("Test completed successfully");
 	}
-
 }

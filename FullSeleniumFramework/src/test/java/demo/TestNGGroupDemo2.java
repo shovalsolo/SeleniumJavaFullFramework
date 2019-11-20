@@ -1,7 +1,7 @@
 /* 
  * Will run test groups according to the testNG groups in testng6.xml -- 
  * To run this file need to run testng6.xml
- * Example of regular expression in group
+ * Example of regular expression in group running Windows.* will run both groups
  */
 
 package demo;
@@ -15,12 +15,12 @@ public class TestNGGroupDemo2 {
 		System.out.println("From test 1");			//
 	}
 	
-	@Test(groups = {"windows.regression"})
+	@Test(groups = {"windows.regression"})			//Windows.regression group
 	public void test2() {
 		System.out.println("From test 2");			//
 	}
 	
-	@Test(groups = {"linux.regression"})
+	@Test(groups = {"linux.regression"})			//
 	public void test3() {
 		System.out.println("From test 3");			//
 	}
@@ -30,7 +30,7 @@ public class TestNGGroupDemo2 {
 		System.out.println("From test 4");			//
 	}
 	
-	@Test(groups = {"windows.sanity"})
+	@Test(groups = {"windows.sanity"})				//Windows.sanity group
 	public void test5() {
 		System.out.println("From test 5");			//
 	}

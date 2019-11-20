@@ -8,7 +8,6 @@
 package demo;
 
 import org.testng.annotations.Test;
-
 import junit.framework.Assert;
 
 public class TestNGRetryFailedDemo {
@@ -38,5 +37,4 @@ public class TestNGRetryFailedDemo {
 	public void test4() {
 		System.out.println("Hi from Test 4");
 	}
-
 }
