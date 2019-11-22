@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11556" started-at="2019-11-22T14:57:11 EST" finished-at="2019-11-22T14:57:22 EST">
+  <suite name="Default suite" duration-ms="13588" started-at="2019-11-22T15:17:04 EST" finished-at="2019-11-22T15:17:18 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11556" started-at="2019-11-22T14:57:11 EST" finished-at="2019-11-22T14:57:22 EST">
-      <class name="demo.HeadlessChromeDemo">
-        <test-method status="PASS" signature="test()[pri:0, instance:demo.HeadlessChromeDemo@7c29daf3]" name="test" duration-ms="11511" started-at="2019-11-22T14:57:11 EST" finished-at="2019-11-22T14:57:22 EST">
+    <test name="Default test" duration-ms="13588" started-at="2019-11-22T15:17:04 EST" finished-at="2019-11-22T15:17:18 EST">
+      <class name="demo.WindowSizeChromeDemo">
+        <test-method status="PASS" signature="test()[pri:0, instance:demo.WindowSizeChromeDemo@7c29daf3]" name="test" duration-ms="13542" started-at="2019-11-22T15:17:04 EST" finished-at="2019-11-22T15:17:18 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- demo.HeadlessChromeDemo -->
+      </class> <!-- demo.WindowSizeChromeDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
