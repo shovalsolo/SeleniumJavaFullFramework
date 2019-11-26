@@ -1,0 +1,45 @@
+Run Selenium TestNG with Maven in CMD
+
+1. Add to POM.xml the following
+
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>${testngFile}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	!!!! OR !!!!
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<includes>
+						<include>WindowSizeChromeDemo.java</include>	<!-- %%% This to run the one or more tests in the class %%% -->
+					</includes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+
+2. Go to project folder in cmd and run the following:
+3. javac -version
+4. java -version
+5. mvn -version
+6. mvn clean
+7. mvn clean test - (will fail old version not to run) 
+8. mvn clean test -DtestngFile=testng8.xml
+9. To run this you should have java JDK for the compiler

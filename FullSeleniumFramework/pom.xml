@@ -69,4 +69,20 @@
 
 	</dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<includes>
+						<include>WindowSizeChromeDemo.java</include>	<!-- %%% This to run the one or more tests in the class %%% -->
+					</includes>
+					<!-- <suiteXmlFiles> <suiteXmlFile>${testngFile}</suiteXmlFile> </suiteXmlFiles> %%% This to run the whole class %%% -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>

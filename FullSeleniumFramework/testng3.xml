@@ -16,11 +16,11 @@
 		</classes>
 	</test> 														<!-- Test1 -->
 	
-	<test thread-count="5" name="TestIE">
-		<parameter name="browserName" value="ie"></parameter>	<!--Setting the browser parameter for the test -->
+	<!-- <test thread-count="5" name="TestIE">
+		<parameter name="browserName" value="ie"></parameter>	Setting the browser parameter for the test
 		<classes>
 			<class name="demo.TestNGMultiBrowserDemo" />
 		</classes>
-	</test> 														<!-- Test1 -->
+	</test> 	 -->													<!-- Test1 -->
 	
 </suite> 															<!-- Suite1 -->
