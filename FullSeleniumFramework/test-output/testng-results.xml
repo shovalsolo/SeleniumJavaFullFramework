@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24850" started-at="2019-11-22T17:02:45 EST" finished-at="2019-11-22T17:03:10 EST">
+  <suite name="Default suite" duration-ms="13504" started-at="2019-11-26T16:59:38 EST" finished-at="2019-11-26T16:59:51 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24850" started-at="2019-11-22T17:02:45 EST" finished-at="2019-11-22T17:03:10 EST">
-      <class name="demo.AutoITDemo">
-        <test-method status="PASS" signature="uploadFile()[pri:0, instance:demo.AutoITDemo@7c29daf3]" name="uploadFile" duration-ms="24809" started-at="2019-11-22T17:02:45 EST" finished-at="2019-11-22T17:03:10 EST">
+    <test name="Default test" duration-ms="13504" started-at="2019-11-26T16:59:38 EST" finished-at="2019-11-26T16:59:51 EST">
+      <class name="demo.WindowSizeChromeDemo">
+        <test-method status="PASS" signature="test()[pri:0, instance:demo.WindowSizeChromeDemo@7c29daf3]" name="test" duration-ms="13455" started-at="2019-11-26T16:59:38 EST" finished-at="2019-11-26T16:59:51 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uploadFile -->
-      </class> <!-- demo.AutoITDemo -->
+        </test-method> <!-- test -->
+      </class> <!-- demo.WindowSizeChromeDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

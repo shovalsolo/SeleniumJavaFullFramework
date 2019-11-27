@@ -1,0 +1,19 @@
+Run test from Jenkins
+
+1. Download Jenkins from https://jenkins.io/download/
+2. Select to download - Generic Java package (.war)
+3. Put war file in program file C:\Program Files\Jenkins\Jenkins.war
+4. Go to the file location and run the following command:  java -jar jenkins.war --httpPort=9191
+5. The default port is 8080
+6. Open browser and in the URL put localhost:8080 or the port you selected
+7. You will need to put the initial Admin Password to start the session that is located at C:\Users\Solomon\.jenkins\secrets\initialAdminPassword
+
+
+Create a Job in Jenkins
+1. Click on new item (the top link)
+2. Give a name for the job
+3. Select Freestyle Project and click on OK
+4. Give a Description 
+5.
+
+
