@@ -9,11 +9,18 @@ Run test from Jenkins
 7. You will need to put the initial Admin Password to start the session that is located at C:\Users\Solomon\.jenkins\secrets\initialAdminPassword
 
 
-Create a Job in Jenkins
+Create a Job in Jenkins to run a test or a class
+
 1. Click on new item (the top link)
 2. Give a name for the job
 3. Select Freestyle Project and click on OK
 4. Give a Description 
-5.
+5. In Build section add the steps to run the selenium test as the following:
 
+c:																				--Go to c: drive
+cd C:\Users\Solomon\git\SeleniumJavaFullFramework\FullSeleniumFramework			--Go to this folder
+mvn clean test																	--Run command to run test from cli
+echo Success																	--Print message
+
+6. Save the Job and run it to test
 
