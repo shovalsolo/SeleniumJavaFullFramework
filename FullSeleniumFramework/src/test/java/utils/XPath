@@ -1,0 +1,35 @@
+How to create XPath
+
+Syntax examples:
+//tagname[@attribute='value']
+
+//input[@name='q'] 							- regular 
+//input[@type='text'][@name='txtUsername']  - with 2 attributes to filter
+//*[@type='text'][@name='txtUsername']  	- Using * when we don't know the tag
+//a[contains(text(),'Forgot')]				- Using contains
+//a[text()='Forgot your password?']			- Using text()
+//input[starts-with(@name,'txtUser')]		- Using starts-with
+//input[starts-with(@name,'txt')]			- Will give a few results that starts with txt
+ 
+
+1. Absolute - Going to the object all the way from the start  /html[1]/body[1] until we get to the location of the object starts with /
+2. Relative - Going to the object with a unique tag the object has starts with //
+
+
+Methods:
+1. contains - To search text or part of it							- //a[contains(text(),'Forgot')]
+2. text() -	To locate text											- //a[text()='Forgot your password?']
+3. starts-with - To locate text when you know only the start of it	- //input[starts-with(@name,'txtUser')]
+4. Or - 			- Using or to locate the object					- //input[starts-with(@name,'txt') or (@id='txtUser')]
+5. And -			- Using and to locate the object				- //input[starts-with(@name,'txt') and (@id='txtUsername')]   or  //input[@id='txtUsername' and @name='txtUsername']
+
+
+XPath axes methods:
+1. Following -
+2. Preceding -
+3. Ancestor - 
+4. Parent -
+5. Child - 
+6. Following-sibling
+7. Self - 
+8. Descendant - 
