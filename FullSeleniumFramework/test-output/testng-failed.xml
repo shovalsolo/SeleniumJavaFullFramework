@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.KatalonRecordedTest">
+      <class name="demo.WebDriverTest">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="test1"/>
+          <include name="driverSetup"/>
         </methods>
-      </class> <!-- demo.KatalonRecordedTest -->
+      </class> <!-- demo.WebDriverTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
