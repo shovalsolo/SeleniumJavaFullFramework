@@ -32,13 +32,13 @@ public class Singleton {
 		Singleton y = Singleton.getInstance();				//Creating y object of Singleton and calling the get method
 		Singleton z = Singleton.getInstance();				//Creating z object of Singleton and calling the get method
 		
-		x.str = (x.str).toUpperCase();						//Converting the string in str to uppercase and storing in x.str
+		x.str = (x.str).toUpperCase();						//Converting the string in str to Upper case and storing in x.str
 		
 		System.out.println("X = "+x.str);					//Printing X from str
 		System.out.println("Y = "+y.str);					//Printing Y from str
 		System.out.println("Z = "+z.str);					//Printing Z from str
 		
-		z.str = (z.str).toLowerCase();						//Converting the string in str to uppercase and storing in x.str
+		z.str = (z.str).toLowerCase();						//Converting the string in str to Lower case and storing in x.str
 		
 		System.out.println("X = "+x.str);					//Printing X from str
 		System.out.println("Y = "+y.str);					//Printing Y from str
