@@ -1,3 +1,14 @@
+/* 
+ * This is a Singleton example
+ * The Singleton class has only one object only single object of the class can be created at a time.
+ * When creating another object it will point to the same object that was created
+ * In OOP, a Singleton class is a class that can have only one object (instance of the class) at a time
+ * How to design singleton class:
+ * 1. Set contractor as private
+ * 2. Create a public static method that has return type of object of this singleton class (Lazy Initialization)
+ * 
+ */
+
 package singletoneWebDriver;
 
 public class Singleton {
