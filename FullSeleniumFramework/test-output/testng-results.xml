@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26419" started-at="2019-12-03T17:12:35 EST" finished-at="2019-12-03T17:13:01 EST">
+  <suite name="Default suite" duration-ms="19958" started-at="2019-12-04T18:49:16 EST" finished-at="2019-12-04T18:49:36 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26419" started-at="2019-12-03T17:12:35 EST" finished-at="2019-12-03T17:13:01 EST">
-      <class name="UniversalWebDriver.firstTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:UniversalWebDriver.firstTest@5e853265]" name="setup" is-config="true" duration-ms="10298" started-at="2019-12-03T17:12:35 EST" finished-at="2019-12-03T17:12:45 EST">
+    <test name="Default test" duration-ms="19958" started-at="2019-12-04T18:49:16 EST" finished-at="2019-12-04T18:49:36 EST">
+      <class name="singletoneWebDriver.PageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="setUp" is-config="true" duration-ms="10038" started-at="2019-12-04T18:49:16 EST" finished-at="2019-12-04T18:49:26 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:UniversalWebDriver.firstTest@5e853265]" name="test1" duration-ms="15938" started-at="2019-12-03T17:12:45 EST" finished-at="2019-12-03T17:13:01 EST">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testMethod()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="testMethod" duration-ms="5013" started-at="2019-12-04T18:49:26 EST" finished-at="2019-12-04T18:49:31 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:UniversalWebDriver.firstTest@5e853265]" name="cleanup" is-config="true" duration-ms="142" started-at="2019-12-03T17:13:01 EST" finished-at="2019-12-03T17:13:01 EST">
+        </test-method> <!-- testMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="tearDown" is-config="true" duration-ms="4867" started-at="2019-12-04T18:49:31 EST" finished-at="2019-12-04T18:49:36 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cleanup -->
-      </class> <!-- UniversalWebDriver.firstTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- singletoneWebDriver.PageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

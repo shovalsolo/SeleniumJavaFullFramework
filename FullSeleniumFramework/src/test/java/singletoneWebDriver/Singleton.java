@@ -3,6 +3,11 @@
  * The Singleton class has only one object only single object of the class can be created at a time.
  * When creating another object it will point to the same object that was created
  * In OOP, a Singleton class is a class that can have only one object (instance of the class) at a time
+ * 
+ * The difference between a normal class and a singleton class:
+ * For normal class we use constructor to create an instance of the class object
+ * In singleton class we use getInstance() method to create an instance of the class object
+ * 
  * How to design singleton class:
  * 1. Set contractor as private
  * 2. Create a public static method that has return type of object of this singleton class (Lazy Initialization)
