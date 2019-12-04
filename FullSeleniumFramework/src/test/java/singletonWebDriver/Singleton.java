@@ -6,7 +6,6 @@
  * How to design singleton class:
  * 1. Set contractor as private
  * 2. Create a public static method that has return type of object of this singleton class (Lazy Initialization)
- * 
  */
 
 package singletonWebDriver;
