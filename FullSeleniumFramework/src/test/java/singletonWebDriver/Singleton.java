@@ -20,7 +20,7 @@ public class Singleton {
 		str="Using singleton class pattern";				//Setting the string parameter in the Constructor
 	}
 	
-	public static Singleton getInstance() {					//A get method
+	public static Singleton getInstance() {					//A get method	-- Lazy Initialization
 		if (singleton_instance == null)						//Checking if singleton_instance is null
 			singleton_instance = new Singleton();			//If is null initializing from the constructor 
 		return singleton_instance;							//Returning the object parameter
