@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="singletoneWebDriver.PageTest">
+      <class name="baseClass.loginTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="testMethod"/>
+          <include name="loginToApplication"/>
         </methods>
-      </class> <!-- singletoneWebDriver.PageTest -->
+      </class> <!-- baseClass.loginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
