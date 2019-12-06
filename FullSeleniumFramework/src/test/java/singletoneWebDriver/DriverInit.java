@@ -32,7 +32,6 @@ public class DriverInit {
 		
 	}
 	
-
 	public WebDriver openBrowser() {											//A method that is Initializing the webDriver 
 		if (driver == null) {
 			ChromeOptions options = new ChromeOptions();						//Creating an object of Chrome options
@@ -48,7 +47,7 @@ public class DriverInit {
 		return driver;															//returning driver when browser was not sent the default is Chrome
 	}
 	
-	public WebDriver openBrowser(String browserName) {
+	public WebDriver openBrowser(String browserName) {								//Overloading the openBrowser function with browser option
 		if (driver == null) {
 			System.out.println("driver == null");
 			if (browserName.equalsIgnoreCase("ie")) {
