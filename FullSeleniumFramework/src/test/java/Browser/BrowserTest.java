@@ -65,7 +65,7 @@ public class BrowserTest {
 //		
 //		System.out.println("projectPath : " + projectPath);
 //		
-//		System.setProperty("webdriver.ie.driver", projectPath+"/drivers/iedriver/IEDriverServer.exe");	//the location of the chrome driver
+//		System.setProperty("webdriver.ie.driver", projectPath+"/drivers/iedriver/IEDriverServer.exe");	//the location of the IE driver
 //		
 //		driver = new InternetExplorerDriver();
 //		

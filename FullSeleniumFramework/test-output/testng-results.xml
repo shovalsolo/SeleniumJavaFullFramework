@@ -1,77 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[=======Setup browser Started=======]]>
-    </line>
-    <line>
-      <![CDATA[=======Setup browser End=======]]>
-    </line>
-    <line>
-      <![CDATA[=======Click on login Started=======]]>
-    </line>
-    <line>
-      <![CDATA[=======Click on login End=======]]>
-    </line>
-    <line>
-      <![CDATA[=======Click on login Started=======]]>
-    </line>
-    <line>
-      <![CDATA[=======Click on login End=======]]>
-    </line>
-    <line>
-      <![CDATA[=======Closing Browser Session started=======]]>
-    </line>
-    <line>
-      <![CDATA[=======Closing Browser Session End=======]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22939" started-at="2019-12-05T16:10:50 EST" finished-at="2019-12-05T16:11:13 EST">
+  <suite name="Default suite" duration-ms="16567" started-at="2019-12-06T16:55:53 EST" finished-at="2019-12-06T16:56:09 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22939" started-at="2019-12-05T16:10:50 EST" finished-at="2019-12-05T16:11:13 EST">
-      <class name="baseClass.invalidLoginTest">
-        <test-method status="PASS" signature="setupApplication()[pri:0, instance:baseClass.invalidLoginTest@68bbe345]" name="setupApplication" is-config="true" duration-ms="6099" started-at="2019-12-05T16:10:50 EST" finished-at="2019-12-05T16:10:56 EST">
+    <test name="Default test" duration-ms="16567" started-at="2019-12-06T16:55:53 EST" finished-at="2019-12-06T16:56:09 EST">
+      <class name="singletoneWebDriver.PageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="setUp" is-config="true" duration-ms="10180" started-at="2019-12-06T16:55:53 EST" finished-at="2019-12-06T16:56:03 EST">
           <reporter-output>
-            <line>
-              <![CDATA[=======Setup browser Started=======]]>
-            </line>
-            <line>
-              <![CDATA[=======Setup browser End=======]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:baseClass.invalidLoginTest@68bbe345]" name="loginToApplication" duration-ms="8660" started-at="2019-12-05T16:10:56 EST" description="This TC will perform an invalid login" finished-at="2019-12-05T16:11:04 EST">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testMethod()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="testMethod" duration-ms="5615" started-at="2019-12-06T16:56:03 EST" finished-at="2019-12-06T16:56:08 EST">
           <reporter-output>
-            <line>
-              <![CDATA[=======Click on login Started=======]]>
-            </line>
-            <line>
-              <![CDATA[=======Click on login End=======]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="loginToApplication1()[pri:0, instance:baseClass.invalidLoginTest@68bbe345]" name="loginToApplication1" duration-ms="7347" started-at="2019-12-05T16:11:04 EST" description="This TC will perform an invalid login" finished-at="2019-12-05T16:11:12 EST">
+        </test-method> <!-- testMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="tearDown" is-config="true" duration-ms="726" started-at="2019-12-06T16:56:08 EST" finished-at="2019-12-06T16:56:09 EST">
           <reporter-output>
-            <line>
-              <![CDATA[=======Click on login Started=======]]>
-            </line>
-            <line>
-              <![CDATA[=======Click on login End=======]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- loginToApplication1 -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:baseClass.invalidLoginTest@68bbe345]" name="CloseApplication" is-config="true" duration-ms="783" started-at="2019-12-05T16:11:12 EST" finished-at="2019-12-05T16:11:13 EST">
-          <reporter-output>
-            <line>
-              <![CDATA[=======Closing Browser Session started=======]]>
-            </line>
-            <line>
-              <![CDATA[=======Closing Browser Session End=======]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CloseApplication -->
-      </class> <!-- baseClass.invalidLoginTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- singletoneWebDriver.PageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
