@@ -5,8 +5,6 @@
     <classes>
       <class name="singletoneWebDriver.PageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="testMethod"/>
         </methods>
       </class> <!-- singletoneWebDriver.PageTest -->

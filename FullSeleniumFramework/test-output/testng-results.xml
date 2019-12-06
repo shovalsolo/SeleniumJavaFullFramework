@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16567" started-at="2019-12-06T16:55:53 EST" finished-at="2019-12-06T16:56:09 EST">
+  <suite name="Default suite" duration-ms="16624" started-at="2019-12-06T17:06:22 EST" finished-at="2019-12-06T17:06:39 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16567" started-at="2019-12-06T16:55:53 EST" finished-at="2019-12-06T16:56:09 EST">
+    <test name="Default test" duration-ms="16624" started-at="2019-12-06T17:06:22 EST" finished-at="2019-12-06T17:06:39 EST">
       <class name="singletoneWebDriver.PageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="setUp" is-config="true" duration-ms="10180" started-at="2019-12-06T16:55:53 EST" finished-at="2019-12-06T16:56:03 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="setUp" is-config="true" duration-ms="10223" started-at="2019-12-06T17:06:22 EST" finished-at="2019-12-06T17:06:32 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testMethod()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="testMethod" duration-ms="5615" started-at="2019-12-06T16:56:03 EST" finished-at="2019-12-06T16:56:08 EST">
+        <test-method status="PASS" signature="testMethod()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="testMethod" duration-ms="5645" started-at="2019-12-06T17:06:32 EST" finished-at="2019-12-06T17:06:38 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="tearDown" is-config="true" duration-ms="726" started-at="2019-12-06T16:56:08 EST" finished-at="2019-12-06T16:56:09 EST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:singletoneWebDriver.PageTest@6c49835d]" name="tearDown" is-config="true" duration-ms="710" started-at="2019-12-06T17:06:38 EST" finished-at="2019-12-06T17:06:39 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
