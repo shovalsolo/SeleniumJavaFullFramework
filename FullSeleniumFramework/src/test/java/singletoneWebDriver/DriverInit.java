@@ -32,7 +32,7 @@ public class DriverInit {
 		
 	}
 	
-	public WebDriver openBrowser() {											//A method that is Initializing the webDriver 
+	public WebDriver openBrowser() {											//A method that is Initializing the webDriver to Chrome when not sending a parameter
 		if (driver == null) {
 			ChromeOptions options = new ChromeOptions();						//Creating an object of Chrome options
 			options.addArguments("--disable-notifications");					//Setting an argument to disable notifications in the browser
@@ -47,7 +47,7 @@ public class DriverInit {
 		return driver;															//returning driver when browser was not sent the default is Chrome
 	}
 	
-	public WebDriver openBrowser(String browserName) {								//Overloading the openBrowser function with browser option
+	public WebDriver openBrowser(String browserName) {								//Overloading the openBrowser function with browser option parameter
 		if (driver == null) {
 			System.out.println("driver == null");
 			if (browserName.equalsIgnoreCase("ie")) {
