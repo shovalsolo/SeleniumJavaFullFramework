@@ -1,3 +1,7 @@
+/* 
+ * This class is an example of how to take a screen shot - print screen ---Not finished
+ */
+
 package utils;
 
 import java.io.File;
@@ -19,8 +23,10 @@ public class captureScreenshot {
 		try {
 			System.out.println("In getScreenShot method");
 			TakesScreenshot ts = (TakesScreenshot)driver;
+			
 			System.out.println("Before getScreenShotAs method");
 			File source = ts.getScreenshotAs(OutputType.FILE);
+			
 			System.out.println("After getScreenShotAs method");
 			FileUtils.copyFile(source , new File(filePath));
 		} 
