@@ -25,7 +25,7 @@ public class ScreenshotHandler {
 	static WebDriver driver =  null;
 	public static String projectPath = System.getProperty("user.dir");			// Creating a parameter of the path to the project location
 	
-	public static void main(String[] args) throws IOException, Exception {
+	public static void main(String[] args) throws  Exception {
 		
 		WebDriverManager.chromedriver().setup();								//Setting ChromeDriver
 		driver = new ChromeDriver();											//Setting browser as Chrome
@@ -34,6 +34,7 @@ public class ScreenshotHandler {
 		
 		takeScreenshot("orangehrlive-login");									//Tacking a screenshot
 		
+		
 		WebElement username = driver.findElement(By.id("txtUsername"));			//Saving txtUsername to web element
 		WebElement password = driver.findElement(By.id("txtPassword"));			//Saving txtPassword to web element
 		WebElement btnLogin = driver.findElement(By.id("btnLogin"));			//Saving btnLogin to web element
@@ -41,6 +42,10 @@ public class ScreenshotHandler {
 		takeElementScreenshot(username, "username");							//Calling to takeElementScreenshot method with WebElement and file name
 		takeElementScreenshot(password, "password");							//Calling to takeElementScreenshot method with WebElement and file name
 		takeElementScreenshot(btnLogin, "btnLogin");							//Calling to takeElementScreenshot method with WebElement and file name
+		
+		ScreenshotManager.cuptureScreenshot(driver , "print");					//This is calling ScreenshotManager.cuptureScreenshot with file name and the WebDriver to get a screenshot
+		ScreenshotManager.cuptureScreenshot(driver , "PrintWebElem" , username);//This is calling ScreenshotManager.cuptureScreenshot with file name, WebElement and the WebDriver to get a screenshot
+		
 		
 		username.sendKeys("Admin");												//Sending keys to field txtUsername
 		password.sendKeys("admin123");											//Sending keys to field txtPassword
