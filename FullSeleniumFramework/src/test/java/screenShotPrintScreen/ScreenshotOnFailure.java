@@ -34,4 +34,5 @@ public class ScreenshotOnFailure {
 			ScreenshotManager.cuptureScreenshot(driver , result.getName());	// %%% This is calling ScreenshotManager.cuptureScreenshot with file name and the WebDriver to get a screenshot
 		}
 		driver.quit();
+	}
 }
