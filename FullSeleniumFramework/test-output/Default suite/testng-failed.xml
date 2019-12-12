@@ -5,7 +5,7 @@
     <classes>
       <class name="screenShotPrintScreen.ScreenshotOnFailure">
         <methods>
-          <include name="test1"/>
+          <include name="ScreenshotOnMethodFailure"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- screenShotPrintScreen.ScreenshotOnFailure -->

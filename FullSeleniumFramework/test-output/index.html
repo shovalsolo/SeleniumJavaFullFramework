@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Solomon\AppData\Local\Temp\testng-eclipse-282272667\testng-customsuite.xml</span>
+                    <span>C:\Users\Solomon\AppData\Local\Temp\testng-eclipse--1909556973\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="screenShotPrintScreen.ScreenshotOnFailure" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="screenShotPrintScreen.ScreenshotOnFailure" hash-for-method="ScreenshotOnMethodFailure">ScreenshotOnMethodFailure</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -125,17 +125,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
+                  <a name="ScreenshotOnMethodFailure">
+                  </a> <!-- ScreenshotOnMethodFailure -->
+                  <span class="method-name">ScreenshotOnMethodFailure</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername11&quot;}
   (Session info: chrome=75.0.3770.100)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-6M9B03E&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Solomon\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58837}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 316c2812f03a327633746dbe6f6aa344
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Solomon\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bccd192b89b9bc2517bb5d35a1cc3751
 *** Element info: {Using=id, value=txtUsername11}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -151,7 +151,7 @@ Session ID: 316c2812f03a327633746dbe6f6aa344
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
 	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at screenShotPrintScreen.ScreenshotOnFailure.test1(ScreenshotOnFailure.java:29)
+	at screenShotPrintScreen.ScreenshotOnFailure.ScreenshotOnMethodFailure(ScreenshotOnFailure.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -189,7 +189,7 @@ Session ID: 316c2812f03a327633746dbe6f6aa344
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Solomon\AppData\Local\Temp\testng-eclipse-282272667\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Solomon\AppData\Local\Temp\testng-eclipse--1909556973\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,7 +198,11 @@ Session ID: 316c2812f03a327633746dbe6f6aa344
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;screenShotPrintScreen.ScreenshotOnFailure&quot;/&gt;
+      &lt;class name=&quot;screenShotPrintScreen.ScreenshotOnFailure&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ScreenshotOnMethodFailure&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- screenShotPrintScreen.ScreenshotOnFailure --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -240,14 +244,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test1')
+data.setCell(0, 1, 'ScreenshotOnMethodFailure')
 data.setCell(0, 2, 'screenShotPrintScreen.ScreenshotOnFailure')
-data.setCell(0, 3, 8416);
+data.setCell(0, 3, 6634);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -277,12 +281,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test1</span>
+                <span class="method-name">ScreenshotOnMethodFailure</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=test1 status=FAILURE method=ScreenshotOnFailure.test1()[pri:0, instance:screenShotP...)</span>
-                <span class="method-start">8440 ms</span>
+                <span class="method-name">tearDown([TestResult name=ScreenshotOnMethodFailure status=FAILURE method=ScreenshotOnFailure.ScreenshotOnMet...)</span>
+                <span class="method-start">6640 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

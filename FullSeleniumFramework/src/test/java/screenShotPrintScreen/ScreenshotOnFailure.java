@@ -19,25 +19,19 @@ public class ScreenshotOnFailure {
 	static WebDriver driver =  null;
 	
 	@Test
-	public void test1() {
+	public void ScreenshotOnMethodFailure() {
 		
 		WebDriverManager.chromedriver().setup();						//Setting ChromeDriver
 		driver = new ChromeDriver();									//Setting browser as Chrome
-		
 		driver.get("https://opensource-demo.orangehrmlive.com/");		//Going to URL
 		
 		driver.findElement(By.id("txtUsername11")).sendKeys("11111");	//This will fail and will go to @AfterMethod and will take the screenshot with the class name as the picture file name
-		
 	}
 	
-	@AfterMethod															//Will run after every function %%%
+	@AfterMethod														//Will run after every function %%%
 	public void tearDown(ITestResult result) {
-		
 		if (ITestResult.FAILURE == result.getStatus()) {
 			ScreenshotManager.cuptureScreenshot(driver , result.getName());	// %%% This is calling ScreenshotManager.cuptureScreenshot with file name and the WebDriver to get a screenshot
 		}
-		
 		driver.quit();
-	}
-
 }
