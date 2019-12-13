@@ -6,7 +6,7 @@
 
 package dataTypeDemo;
 
-public class FloatDemo {
+public class VariableFloatDemo {
 	
 	public static void main (String[] args) {
 		

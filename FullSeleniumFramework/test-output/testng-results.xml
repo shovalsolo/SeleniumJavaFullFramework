@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8021" started-at="2019-12-12T16:10:43 EST" finished-at="2019-12-12T16:10:51 EST">
+  <suite name="Default suite" duration-ms="16978" started-at="2019-12-13T14:49:04 EST" finished-at="2019-12-13T14:49:21 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8021" started-at="2019-12-12T16:10:43 EST" finished-at="2019-12-12T16:10:51 EST">
+    <test name="Default test" duration-ms="16978" started-at="2019-12-13T14:49:04 EST" finished-at="2019-12-13T14:49:21 EST">
       <class name="screenShotPrintScreen.ScreenshotOnFailure">
-        <test-method status="FAIL" signature="ScreenshotOnMethodFailure()[pri:0, instance:screenShotPrintScreen.ScreenshotOnFailure@1f554b06]" name="ScreenshotOnMethodFailure" duration-ms="6634" started-at="2019-12-12T16:10:43 EST" finished-at="2019-12-12T16:10:50 EST">
+        <test-method status="FAIL" signature="ScreenshotOnMethodFailure()[pri:0, instance:screenShotPrintScreen.ScreenshotOnFailure@1f554b06]" name="ScreenshotOnMethodFailure" duration-ms="14902" started-at="2019-12-13T14:49:05 EST" finished-at="2019-12-13T14:49:19 EST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername11"}
@@ -16,8 +16,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-6M9B03E', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Solomon\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: bccd192b89b9bc2517bb5d35a1cc3751
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Solomon\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 213ee5467f1a78e1e435c47109464492
 *** Element info: {Using=id, value=txtUsername11}]]>
             </message>
             <full-stacktrace>
@@ -27,8 +27,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-6M9B03E', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Solomon\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: bccd192b89b9bc2517bb5d35a1cc3751
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Solomon\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 213ee5467f1a78e1e435c47109464492
 *** Element info: {Using=id, value=txtUsername11}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -44,7 +44,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
 at org.openqa.selenium.By$ById.findElement(By.java:188)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at screenShotPrintScreen.ScreenshotOnFailure.ScreenshotOnMethodFailure(ScreenshotOnFailure.java:29)
+at screenShotPrintScreen.ScreenshotOnFailure.ScreenshotOnMethodFailure(ScreenshotOnFailure.java:28)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,7 +79,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotOnMethodFailure -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:screenShotPrintScreen.ScreenshotOnFailure@1f554b06]" name="tearDown" is-config="true" duration-ms="1338" started-at="2019-12-12T16:10:50 EST" finished-at="2019-12-12T16:10:51 EST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:screenShotPrintScreen.ScreenshotOnFailure@1f554b06]" name="tearDown" is-config="true" duration-ms="1969" started-at="2019-12-13T14:49:19 EST" finished-at="2019-12-13T14:49:21 EST">
           <params>
             <param index="0">
               <value>

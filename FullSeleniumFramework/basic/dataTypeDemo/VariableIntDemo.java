@@ -9,7 +9,7 @@
 
 package dataTypeDemo;
 
-public class IntDemo {
+public class VariableIntDemo {
 	
 	public static void main (String[] args) {
 		

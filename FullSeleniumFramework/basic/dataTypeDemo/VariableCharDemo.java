@@ -5,7 +5,7 @@
 
 package dataTypeDemo;
 
-public class CharDemo {
+public class VariableCharDemo {
 	
 	public static void main (String[] args) {
 		
