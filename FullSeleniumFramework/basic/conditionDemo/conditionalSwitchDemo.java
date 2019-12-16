@@ -2,7 +2,7 @@
  * This class is showing about Switch case
  */
 
-package dataTypeDemo;
+package conditionDemo;
 
 public class conditionalSwitchDemo {
 

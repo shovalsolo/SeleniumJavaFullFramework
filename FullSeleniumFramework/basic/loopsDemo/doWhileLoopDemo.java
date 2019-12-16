@@ -2,7 +2,7 @@
  * This class is showing about for do while loop
  */
 
-package dataTypeDemo;
+package loopsDemo;
 
 public class doWhileLoopDemo {
 

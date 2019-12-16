@@ -2,7 +2,7 @@
  * This class is showing about if , else if and else conditional statement 
  */
 
-package dataTypeDemo;
+package conditionDemo;
 
 public class conditionalIfDemo {
 

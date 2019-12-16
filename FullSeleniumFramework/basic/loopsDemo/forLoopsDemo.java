@@ -2,7 +2,7 @@
  * This class is showing about for loop
  */
 
-package dataTypeDemo;
+package loopsDemo;
 
 public class forLoopsDemo {
 	
