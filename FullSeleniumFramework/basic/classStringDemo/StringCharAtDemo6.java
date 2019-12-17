@@ -14,7 +14,6 @@ public class StringCharAtDemo6 {
 		
 		System.out.println(actual.charAt(8));							//This will return the character in index 8 in the string
 		
-
 	}
 
 }
