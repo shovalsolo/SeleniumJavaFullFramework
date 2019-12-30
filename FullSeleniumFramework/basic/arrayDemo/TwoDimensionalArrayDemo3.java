@@ -1,5 +1,5 @@
 /* 
- * This class is showing about TwoDimensional arrays how to create populate 
+ * This class is showing about TwoDimensional arrays how to create populate the array 
  */
 package arrayDemo;
 
@@ -22,7 +22,7 @@ public class TwoDimensionalArrayDemo3 {
 		
 		for (int i = 0; i < school.length; i++) {					//printing the array
 			for (int j = 0; j < school.length+1; j++) {				//Adding +1 to print all the array
-				System.out.println("School ID is: "+ school[i][j]);
+				System.out.println("School ID is: "+ school[i][j]);	//Printing the content of the array
 			}
 		}
 	}
