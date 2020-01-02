@@ -6,11 +6,11 @@
 
 package interfaceDemo;
 
-public class AdvancedCalc2 implements CalcInterface {	//When implementing the interface it is creating the functions from the interface to the class
+public class AdvancedCalc1 implements CalcInterface {	//When implementing the interface it is creating the functions from the interface to the class
 	
 	public static void main(String[] args) {
 		
-		CalcInterface ac1 = new AdvancedCalc2();
+		CalcInterface ac1 = new AdvancedCalc1();
 		
 		ac1.add();										//Calling a function that is created in the interface and implemented in the advanced class
 		
