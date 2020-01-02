@@ -9,7 +9,7 @@ package interfaceDemo;
 
 public interface CalcInterface {
 	
-	int x=10;
+	int x=10;						//The parameters are final and cannot be changed - you cannot change any value that is coming from the interface
 	public void add();				//Abstract method
 	public void sub();				//Abstract method
 
