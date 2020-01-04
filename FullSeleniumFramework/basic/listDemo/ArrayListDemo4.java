@@ -1,7 +1,7 @@
 /* 
  * This is a demo for ArrayList with a limited type <String>  
  * ArrayList<String> is used to limit the array type of parameters 
- * Enhanced for loop - using Object and a parameter(abc) in the loop moving the content of the ArrayList cell in the the parameter and this is for every loop
+ * Enhanced for loop - using Object and a parameter (abc) in the loop moving the content of the ArrayList cell in the the parameter and this is for every loop
  */
 
 package listDemo;
@@ -12,7 +12,7 @@ public class ArrayListDemo4 {
 
 	public static void main(String[] args) {
 		
-		ArrayList<String> al1 =  new ArrayList<String>();
+		ArrayList<String> al1 =  new ArrayList<String>();	//Creating an ArrayList of a type of String
 		
 		al1.add("Selenium WebDriver");			//Adding a string to the ArrayList
 		
