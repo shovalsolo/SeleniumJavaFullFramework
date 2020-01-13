@@ -15,7 +15,8 @@ public class ExceptionHandlingDemo {
 			
 			System.out.println("Div result is : " + c);								//SPrinting the result
 		
-		} catch (ArithmeticException e) {
+		} 
+		catch (ArithmeticException e) {
 			
 			System.out.println("Error in dividing the numbers" + e.getMessage());	//Printing for the start of the program
 			
