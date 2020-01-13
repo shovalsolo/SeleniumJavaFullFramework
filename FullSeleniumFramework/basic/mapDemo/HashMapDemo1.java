@@ -3,16 +3,17 @@
  * 1. HashMap is a class that is implementing the Map interface.
  * 2. HashMap can have only unique key and values 
  * 3. HashMap after inserting the keys and values the saved order is not according to the insertion order
- * 4. Put method to insert
- * 5. get method to retrive the value
  *  https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
  */
 
 package mapDemo;
 
 import java.util.HashMap;
+import java.util.Map;
 
-public class HashMapDemo {
+import com.google.common.collect.Multiset.Entry;
+
+public class HashMapDemo1 {
 
 	public static void main(String[] args) {
 		
@@ -27,10 +28,9 @@ public class HashMapDemo {
 		objHM1.put("800", "Project");										//Inserting unique key and value to the HashMap
 		
 		
-		System.out.println(objHM1);											//This will print the following not in the order of the insertion {400=HashMap, 500=Java, 600=test, 601=test1, 700=Selenium, 602=test2, 800=Project}
-
-		String param = objHM1.get("700");									//Saving the value from key 700 to param
-		System.out.println("Value from HashMap is "+ param);				//Printing the param from key 700
+		for (Map.Entry<String, String> data :objHM1.entrySet()) {			//Enhanced for loop to print the HashMap values and keys inserting it to data
+			System.out.println(data.getKey() + " and value is :  " +data.getValue());	//Every loop printing the data with key and value
+		}
 	}
 
 }
