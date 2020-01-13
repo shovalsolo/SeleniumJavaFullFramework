@@ -3,7 +3,6 @@
  * 1. LinkedHashMap is a class that is implementing the Map interface.
  * 2. LinkedHashMap can have only unique key and values 
  * 3. LinkedHashMap after inserting the keys and values the saved order is according to the insertion order
- *  https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
  */
 
 package mapDemo;

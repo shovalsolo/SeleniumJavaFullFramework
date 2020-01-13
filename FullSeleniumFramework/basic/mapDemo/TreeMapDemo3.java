@@ -1,10 +1,9 @@
 /* 
  * This class is showing about TreeMap how to insert to the TreeMap and how to print
  * 1. TreeMap is a class that is implementing the NavigatableMap interface.
- * 2. TreeMap is supporting asc and desd ordering 
+ * 2. TreeMap is supporting ascending  and Descending ordering 
  * 2. TreeMap can have only unique key and values 
  * 3. TreeMap after inserting the keys and values the saved order is according to the insertion order
- *  https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
  */
 
 package mapDemo;
