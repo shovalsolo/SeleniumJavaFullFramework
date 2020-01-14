@@ -1,5 +1,5 @@
 /* 
- * This class is showing about arrays how to populate
+ * This class is showing about arrays how to populate a Single array and how to print with an index
  *  
  */
 
