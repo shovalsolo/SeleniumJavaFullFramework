@@ -1,6 +1,6 @@
 /* 
  * This class is showing about String function Trim
- * Trim(); is is trimming the spaces in the string but only in the beginning and the end of the string
+ * Trim()- is trimming the spaces in the string but only in the beginning and the end of the string
  */
 
 package classStringDemo;
