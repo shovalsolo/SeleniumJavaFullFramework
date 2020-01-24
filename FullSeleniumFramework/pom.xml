@@ -65,12 +65,13 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>4.1.1</version>
 		</dependency>
-		
+
 		<dependency>
-    		<groupId>com.github.javafaker</groupId>
-    		<artifactId>javafaker</artifactId>
-    		<version>1.0.1</version>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>1.0.1</version>
 		</dependency>
+
 
 	</dependencies>
 
@@ -84,7 +85,8 @@
 					<includes>
 						<include>WindowSizeChromeDemo.java</include>	<!-- %%% This to run the one or more tests in the class %%% -->
 					</includes>
-					<!-- <suiteXmlFiles> <suiteXmlFile>${testngFile}</suiteXmlFile> </suiteXmlFiles> %%% This to run the whole class %%% -->
+					<!-- <suiteXmlFiles> <suiteXmlFile>${testngFile}</suiteXmlFile> </suiteXmlFiles> 
+						%%% This to run the whole class %%% -->
 				</configuration>
 			</plugin>
 		</plugins>
