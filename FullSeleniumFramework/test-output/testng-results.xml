@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[=======Initializing Chrome Started=======]]>
+    </line>
+    <line>
+      <![CDATA[=======Initializing Chrome Ended=======]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16734" started-at="2020-01-27T22:33:23Z" finished-at="2020-01-27T22:33:40Z">
+  <suite name="Default suite" duration-ms="18290" started-at="2020-01-28T20:36:29Z" finished-at="2020-01-28T20:36:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16734" started-at="2020-01-27T22:33:23Z" finished-at="2020-01-27T22:33:40Z">
-      <class name="buildingBlocks.Search_T_SHIRTS_TestNG">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:buildingBlocks.Search_T_SHIRTS_TestNG@402a079c]" name="setUp" is-config="true" duration-ms="6042" started-at="2020-01-27T22:33:23Z" finished-at="2020-01-27T22:33:29Z">
+    <test name="Default test" duration-ms="18290" started-at="2020-01-28T20:36:29Z" finished-at="2020-01-28T20:36:47Z">
+      <class name="singletoneWebDriver.PageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:singletoneWebDriver.PageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="10768" started-at="2020-01-28T20:36:29Z" finished-at="2020-01-28T20:36:40Z">
           <reporter-output>
+            <line>
+              <![CDATA[=======Initializing Chrome Started=======]]>
+            </line>
+            <line>
+              <![CDATA[=======Initializing Chrome Ended=======]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="automationSignIn()[pri:0, instance:buildingBlocks.Search_T_SHIRTS_TestNG@402a079c]" name="automationSignIn" duration-ms="2143" started-at="2020-01-27T22:33:29Z" finished-at="2020-01-27T22:33:32Z">
+        <test-method status="PASS" signature="testMethod()[pri:0, instance:singletoneWebDriver.PageTest@3c0ecd4b]" name="testMethod" duration-ms="6297" started-at="2020-01-28T20:36:40Z" finished-at="2020-01-28T20:36:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- automationSignIn -->
-        <test-method status="PASS" signature="search_T_Shirts()[pri:0, instance:buildingBlocks.Search_T_SHIRTS_TestNG@402a079c]" name="search_T_Shirts" duration-ms="1927" started-at="2020-01-27T22:33:32Z" finished-at="2020-01-27T22:33:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search_T_Shirts -->
-        <test-method status="PASS" signature="signOut()[pri:0, instance:buildingBlocks.Search_T_SHIRTS_TestNG@402a079c]" name="signOut" duration-ms="5899" started-at="2020-01-27T22:33:33Z" finished-at="2020-01-27T22:33:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signOut -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:buildingBlocks.Search_T_SHIRTS_TestNG@402a079c]" name="tearDown" is-config="true" duration-ms="697" started-at="2020-01-27T22:33:39Z" finished-at="2020-01-27T22:33:40Z">
+        </test-method> <!-- testMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:singletoneWebDriver.PageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="1205" started-at="2020-01-28T20:36:46Z" finished-at="2020-01-28T20:36:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- buildingBlocks.Search_T_SHIRTS_TestNG -->
+      </class> <!-- singletoneWebDriver.PageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
