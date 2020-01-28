@@ -1,5 +1,5 @@
 /* 
- * A class that will extend the base class
+ * A class that will extend the base class so base class will run before this class
  * Extending a class will execute the file the is extending
  * 
  */

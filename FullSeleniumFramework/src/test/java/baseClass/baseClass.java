@@ -1,5 +1,5 @@
 /* 
- * A base class is a class is a class that is being extended by other classes to do an action one time
+ * A base class is a class is that is being extended by other classes to do an action one time
  * @BeforeMethod and AfetrMethod will run after every function
  * @BeforeClass and @AfterClass will run only in the beginning of the class and in the end of it
  * 

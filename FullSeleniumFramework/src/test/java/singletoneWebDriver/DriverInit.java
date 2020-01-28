@@ -15,6 +15,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -26,7 +27,7 @@ public class DriverInit {
 	
 	private static DriverInit instanceDriver = null;							//Creating an object parameter of the class
 	private WebDriver driver;
-	public String projectPath = System.getProperty("user.dir");					// Creating a parameter of the path to the firefox driver
+	public String projectPath = System.getProperty("user.dir");					//Creating a parameter of the path to the firefox driver
 	
 	private DriverInit() {														//Empty Constructor without Initializing
 		
@@ -34,6 +35,7 @@ public class DriverInit {
 	
 	public WebDriver openBrowser() {											//A method that is Initializing the webDriver to Chrome when not sending a parameter
 		if (driver == null) {
+			Reporter.log("=======Initializing browser Started=======",true);
 			ChromeOptions options = new ChromeOptions();						//Creating an object of Chrome options
 			options.addArguments("--disable-notifications");					//Setting an argument to disable notifications in the browser
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);					//Setting PageLoadStrategy to none preventing the page from loading while executing
@@ -43,6 +45,7 @@ public class DriverInit {
 			driver.manage().deleteAllCookies(); 								//Deleting all the cookies
 			driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);	//Setting implicitlyWait of 45 seconds
 			driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);	//Setting pageLoadTimeout of 45 seconds 
+			Reporter.log("=======Initializing browser Ended=======",true);
 		}
 		return driver;															//returning driver when browser was not sent the default is Chrome
 	}
@@ -51,6 +54,7 @@ public class DriverInit {
 		if (driver == null) {
 			System.out.println("driver == null");
 			if (browserName.equalsIgnoreCase("ie")) {
+				Reporter.log("=======Initializing IE Started=======",true);
 				DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();									//Creating DesiredCapabilities
 				capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);	//Setting capabilities to ignore security domains
 				WebDriverManager.iedriver().setup();								//Setting driver to IE
@@ -59,30 +63,37 @@ public class DriverInit {
 				driver.manage().deleteAllCookies(); 								//Deleting all the cookies
 				driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);	//Setting implicitlyWait of 45 seconds
 				driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);	//Setting pageLoadTimeout of 45 seconds
+				Reporter.log("=======Initializing IE Ended=======",true);
 			}
 			else if (browserName.equalsIgnoreCase("firefox")) {
+				Reporter.log("=======Initializing Firefox Started=======",true);
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();										//Setting ChromeDriver to driver
 				driver.manage().window().maximize();								//Setting the window to maximum
 				driver.manage().deleteAllCookies(); 								//Deleting all the cookies
 				driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);	//Setting implicitlyWait of 45 seconds
 				driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);	//Setting pageLoadTimeout of 45 seconds 
+				Reporter.log("=======Initializing Firefox Ended=======",true);
 			}
 			else if(browserName.equalsIgnoreCase("chrome")){
+				Reporter.log("=======Initializing Chrome Started=======",true);
 				WebDriverManager.chromedriver().setup();							//Setting the WebDriverManager
 				driver = new ChromeDriver();										//Setting the driver to ChromeDriver
 				driver.manage().window().maximize();								//Setting the window to maximum
 				driver.manage().deleteAllCookies(); 								//Deleting all the cookies
 				driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);	//Setting implicitlyWait of 45 seconds
 				driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);	//Setting pageLoadTimeout of 45 seconds
+				Reporter.log("=======Initializing Chrome Ended=======",true);
 			}
 			else {
 				WebDriverManager.chromedriver().setup();							//Setting the WebDriverManager
+				Reporter.log("=======Initializing Chrome Started=======",true);
 				driver = new ChromeDriver();										//Setting the driver to ChromeDriver
 				driver.manage().window().maximize();								//Setting the window to maximum
 				driver.manage().deleteAllCookies(); 								//Deleting all the cookies
 				driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);	//Setting implicitlyWait of 45 seconds
 				driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);	//Setting pageLoadTimeout of 45 seconds
+				Reporter.log("=======Initializing Chrome Ended=======",true);
 			}
 		}
 		return driver;
