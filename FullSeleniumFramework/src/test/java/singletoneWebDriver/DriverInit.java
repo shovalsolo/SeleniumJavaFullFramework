@@ -30,12 +30,11 @@ public class DriverInit {
 	public String projectPath = System.getProperty("user.dir");					//Creating a parameter of the path to the firefox driver
 	
 	private DriverInit() {														//Empty Constructor without Initializing
-		
 	}
 	
 	public WebDriver openBrowser() {											//A method that is Initializing the webDriver to Chrome when not sending a parameter
 		if (driver == null) {
-			Reporter.log("=======Initializing browser Started=======",true);
+			Reporter.log("=======Initializing browser no parameter Started=======",true);
 			ChromeOptions options = new ChromeOptions();						//Creating an object of Chrome options
 			options.addArguments("--disable-notifications");					//Setting an argument to disable notifications in the browser
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);					//Setting PageLoadStrategy to none preventing the page from loading while executing
@@ -45,7 +44,7 @@ public class DriverInit {
 			driver.manage().deleteAllCookies(); 								//Deleting all the cookies
 			driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);	//Setting implicitlyWait of 45 seconds
 			driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);	//Setting pageLoadTimeout of 45 seconds 
-			Reporter.log("=======Initializing browser Ended=======",true);
+			Reporter.log("=======Initializing browser no parameter Ended=======",true);
 		}
 		return driver;															//returning driver when browser was not sent the default is Chrome
 	}
@@ -100,7 +99,7 @@ public class DriverInit {
 	}
 	
 	public static DriverInit getInstance() {										//Get instance method
-		if (instanceDriver == null)													//If instanceDriver is null 
+		if (instanceDriver == null)													//If instanceDriver is null empty
 			instanceDriver = new DriverInit();										//Initializing instanceDriver with the object of DriverInit
 		return instanceDriver;														//Returning instanceDriver
 	}
