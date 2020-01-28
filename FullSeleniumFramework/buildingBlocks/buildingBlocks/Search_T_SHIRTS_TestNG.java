@@ -110,7 +110,7 @@ public class Search_T_SHIRTS_TestNG {
 	}
 	
 	@Test
-	public void signOut()
+	public void signOut()																	//Sign Out from user
 	{
 		try { 
 			driver.findElement(By.className("logout")).click();								//Can use to search only a part of the link text //Click on logout
@@ -125,7 +125,7 @@ public class Search_T_SHIRTS_TestNG {
 	}
 	
 	@AfterTest
-	public void tearDown()
+	public void tearDown()																		//Tear Down to close browser and process
 	{
 		try {
 			driver.close();																		//Close the window
