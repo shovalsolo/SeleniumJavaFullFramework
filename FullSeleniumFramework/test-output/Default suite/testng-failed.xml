@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="buildingBlocks.Search_T_SHIRTS_TestNG">
+      <class name="screenShotPrintScreen.ScreenshotOnFailure">
         <methods>
-          <include name="search_T_Shirts"/>
+          <include name="ScreenshotOnMethodFailure"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- buildingBlocks.Search_T_SHIRTS_TestNG -->
+      </class> <!-- screenShotPrintScreen.ScreenshotOnFailure -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -31,7 +31,7 @@ public class ScreenshotOnFailure {
 	@AfterMethod														//Will run after every function %%%
 	public void tearDown(ITestResult result) {
 		if (ITestResult.FAILURE == result.getStatus()) {
-			ScreenshotManager.cuptureScreenshot(driver , result.getName());	// %%% This is calling ScreenshotManager.cuptureScreenshot with file name and the WebDriver to get a screenshot
+			ScreenshotManager.cuptureScreenshot(driver , result.getName());	// %%% This is calling ScreenshotManager.cuptureScreenshot with file name and the WebDriver to get a screenshot with the name of the function that was failed
 		}
 		driver.quit();
 	}
