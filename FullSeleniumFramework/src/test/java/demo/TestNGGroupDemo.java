@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class TestNGGroupDemo {
 	
-	@Test(groups = {"sanity"})
+	@Test(groups = {"sanity"})						//Belongs to group sanity in testng4.xml
 	public void test1() {
 		System.out.println("From test 1");			//
 	}
