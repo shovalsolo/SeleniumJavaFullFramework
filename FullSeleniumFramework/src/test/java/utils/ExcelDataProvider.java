@@ -26,7 +26,7 @@ public class ExcelDataProvider {
 	}
 
 	@Test(dataProvider="testData")												//Using testNG and giving the DataProvider and will call the second test 
-	public void test1(String username, String password) throws Exception {						//Providing the titles of the table
+	public void test1(String username, String password) throws Exception {		//Providing the titles of the table
 		System.out.println(" | "+username+"  |  "+password+" | ");				//Printing the parameters 
 		driver.get("https://opensource-demo.orangehrmlive.com/");				//Navigating to a site
 		driver.findElement(By.id("txtUsername")).sendKeys(username);			//Locating the username field and sending the keys

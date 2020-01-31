@@ -1,5 +1,8 @@
 /* 
  * This is a class that is getting information from excel file data.xlsx and this class is called from ExcelUtilsDemo
+ * Using 
+ * 1. XSSFWorkbook 
+ * 2. XSSFSheet
  */
 
 package utils;
@@ -34,7 +37,7 @@ public class ExcelUtils {
 		int rowCount = 0;
 		
 		try {
-			rowCount =  sheet.getPhysicalNumberOfRows();						//Saving the number of rows to a parameter
+			rowCount =  sheet.getPhysicalNumberOfRows();							//Saving the number of rows to a parameter
 			System.out.println("Number of rows:  "+ rowCount); 						//Printing the number of rows
 		} 
 		catch (Exception e) {
@@ -50,7 +53,7 @@ public class ExcelUtils {
 		
 		try {
 			colCount =  sheet.getRow(0).getPhysicalNumberOfCells();					//Saving the number of columns to a parameter
-			System.out.println("Number of columns:  "+ colCount); 						//Printing the number of columns
+			System.out.println("Number of columns:  "+ colCount); 					//Printing the number of columns
 		} 
 		catch (Exception e) {
 			System.out.println("Message is : " +e.getMessage());					//Printing the exception message
@@ -60,7 +63,7 @@ public class ExcelUtils {
 		return colCount;
 	}
 	
-	public static String getCellDataString(int rowNum, int colNum) {					//This function will print a string data in a sheet
+	public static String getCellDataString(int rowNum, int colNum) {				//This function will print a string data in a sheet
 		
 		String cellData= null;
 		try {
@@ -75,7 +78,7 @@ public class ExcelUtils {
 		return cellData;
 	}
 	
-	public static Double getCellDataNumber(int rowNum, int colNum) {					//This function will print a string data in a sheet
+	public static Double getCellDataNumber(int rowNum, int colNum) {				//This function will print a string data in a sheet
 		
 		Double cellData = 0.0;
 		try {
