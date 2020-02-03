@@ -1,5 +1,6 @@
 /* 
  * This is a class that is getting data from excel file with the help of class ExcelUtils and performing login to site with data from the excel
+ * Using dataProvider
  */
 
 package utils;
