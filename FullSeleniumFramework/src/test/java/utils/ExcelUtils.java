@@ -1,8 +1,13 @@
 /* 
  * This is a class that is getting information from excel file data.xlsx and this class is called from ExcelUtilsDemo
  * Using 
- * 1. XSSFWorkbook 
- * 2. XSSFSheet
+ * 1. ExcelUtils- getting 2 parameters file location and sheet name creating XSSFWorkbook object
+ * 2. getRowCount- This function will print the number or rows in a sheet
+ * 3. getColCount- This function will print the number or columns in a sheet
+ * 4. getCellDataString- This function will print a string data in a sheet the will get the rowNum and colNum
+ * 5. getCellDataNumber- This function will print a integer data in a sheet the will get the rowNum and colNum
+ * . XSSFWorkbook 
+ * . XSSFSheet
  */
 
 package utils;
