@@ -38,7 +38,7 @@ public class ExcelDataProvider {
 	}
 
 	@DataProvider(name = "testData")											//TestNG DataProvider
-	public Object[][] getData() {												//A function that
+	public Object[][] getData() {												//A function that is setting the location of the excel file
 		Object data[][] = testData(projectPath+"/excel/data.xlsx", "sheet1");	//Calling the function
 		return data;
 	}
@@ -59,7 +59,6 @@ public class ExcelDataProvider {
 				String cellData =  excel.getCellDataString(i,j);				//Saving the data every loop to parameter
 				//System.out.print(cellData+"  |  ");								//Printing the parameter with space
 				data[i-1][j]= cellData;											//Saving the data to the object array
-
 			}
 			System.out.println();												//Printing next row
 		}

@@ -27,12 +27,6 @@ public class ExcelUtils {
 		}
 	}
 	
-//	public static void main(String[] args) {
-//		getRowCount();
-//		getCellDataString(0,0);
-//		getCellDataNumber(1,1);
-//	}
-
 	public static int getRowCount() {												//This function will print the number or rows in a sheet
 		int rowCount = 0;
 		
@@ -68,7 +62,7 @@ public class ExcelUtils {
 		String cellData= null;
 		try {
 			cellData = sheet.getRow(rowNum).getCell(colNum).getStringCellValue();	//Getting the cell data to a string parameter
-			//System.out.println(cellData);	
+			System.out.println(cellData);	
 		} 
 		catch (Exception e) {
 			System.out.println("Message is : " +e.getMessage());					//Printing the exception message
@@ -83,7 +77,7 @@ public class ExcelUtils {
 		Double cellData = 0.0;
 		try {
 			cellData = sheet.getRow(rowNum).getCell(colNum).getNumericCellValue();	//Getting the cell data to a string parameter
-			//System.out.println(cellData);	
+			System.out.println(cellData);	
 		} 
 		catch (Exception e) {
 			System.out.println("Message is : " +e.getMessage());					//Printing the exception message
