@@ -63,7 +63,6 @@ public class ExcelUtils {
 	}
 	
 	public static String getCellDataString(int rowNum, int colNum) {				//This function will print a string data in a sheet
-		
 		String cellData= null;
 		try {
 			cellData = sheet.getRow(rowNum).getCell(colNum).getStringCellValue();	//Getting the cell data to a string parameter
@@ -78,7 +77,6 @@ public class ExcelUtils {
 	}
 	
 	public static Double getCellDataNumber(int rowNum, int colNum) {				//This function will print a string data in a sheet
-		
 		Double cellData = 0.0;
 		try {
 			cellData = sheet.getRow(rowNum).getCell(colNum).getNumericCellValue();	//Getting the cell data to a string parameter
@@ -91,5 +89,4 @@ public class ExcelUtils {
 		}
 		return cellData;
 	}
-
 }
