@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="screenShotPrintScreen.ScreenshotOnFailure">
+      <class name="com.wordpress.Testcases.VerifyWordpressLoginWithParams">
         <methods>
-          <include name="ScreenshotOnMethodFailure"/>
-          <include name="tearDown"/>
+          <include name="VerifyValidLoginWithParams"/>
         </methods>
-      </class> <!-- screenShotPrintScreen.ScreenshotOnFailure -->
+      </class> <!-- com.wordpress.Testcases.VerifyWordpressLoginWithParams -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

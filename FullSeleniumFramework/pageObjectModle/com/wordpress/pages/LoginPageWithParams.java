@@ -24,6 +24,12 @@ public class LoginPageWithParams {
 		this.driver=driver;									//This will initialize the WebDriver
 	}
 	
+	public void loginToWordpress(String userid, String pass) {							//
+		driver.findElement(username).sendKeys(userid);
+		driver.findElement(password).sendKeys(pass);
+		driver.findElement(loginButton).click();
+	}
+	
 	public void typeUsername(String uid) {							//
 		driver.findElement(username).sendKeys(uid);
 	}

@@ -13,9 +13,10 @@ import com.wordpress.pages.LoginPageWithParams;
 
 public class VerifyWordpressLoginWithParams {
 	
+	
+	
 	@Test
 	public void VerifyValidLogin() {				//
-		
 		String projectPath = System.getProperty("user.dir");														// creating a parameter of the path to the chrome driver
 		System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver/chromedriver.exe");//the location of the chrome driver
 		WebDriver driver = new ChromeDriver();
@@ -26,6 +27,19 @@ public class VerifyWordpressLoginWithParams {
 		login.typeUsername("admin");
 		login.typePassword("demo123");
 		login.clickOnLoginButton();
+		driver.close();
+	}
+	
+	
+	@Test
+	public void VerifyValidLoginWithParams() {				//
+		String projectPath = System.getProperty("user.dir");														// creating a parameter of the path to the chrome driver
+		System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver/chromedriver.exe");//the location of the chrome driver
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://demosite.center/wordpress/wp-login.php");
+		LoginPageWithParams login = new LoginPageWithParams(driver);	//Creating an object of the page class LoginPage and passing the driver
+
+		login.loginToWordpress("admin", "demo123");
 		driver.quit();
 	}
 
