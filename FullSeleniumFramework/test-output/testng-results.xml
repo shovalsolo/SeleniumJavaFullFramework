@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16400" started-at="2020-02-10T23:08:36Z" finished-at="2020-02-10T23:08:52Z">
+  <suite name="Default suite" duration-ms="17166" started-at="2020-02-10T23:10:26Z" finished-at="2020-02-10T23:10:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16400" started-at="2020-02-10T23:08:36Z" finished-at="2020-02-10T23:08:52Z">
+    <test name="Default test" duration-ms="17166" started-at="2020-02-10T23:10:26Z" finished-at="2020-02-10T23:10:43Z">
       <class name="com.wordpress.Testcases.VerifyWordpressLoginWithParams">
-        <test-method status="PASS" signature="VerifyValidLogin()[pri:0, instance:com.wordpress.Testcases.VerifyWordpressLoginWithParams@239963d8]" name="VerifyValidLogin" duration-ms="8456" started-at="2020-02-10T23:08:36Z" finished-at="2020-02-10T23:08:44Z">
+        <test-method status="PASS" signature="VerifyValidLogin()[pri:0, instance:com.wordpress.Testcases.VerifyWordpressLoginWithParams@239963d8]" name="VerifyValidLogin" duration-ms="8193" started-at="2020-02-10T23:10:26Z" finished-at="2020-02-10T23:10:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyValidLogin -->
-        <test-method status="PASS" signature="VerifyValidLoginWithParams()[pri:0, instance:com.wordpress.Testcases.VerifyWordpressLoginWithParams@239963d8]" name="VerifyValidLoginWithParams" duration-ms="7887" started-at="2020-02-10T23:08:44Z" finished-at="2020-02-10T23:08:52Z">
+        <test-method status="PASS" signature="VerifyValidLoginWithParams()[pri:0, instance:com.wordpress.Testcases.VerifyWordpressLoginWithParams@239963d8]" name="VerifyValidLoginWithParams" duration-ms="8923" started-at="2020-02-10T23:10:34Z" finished-at="2020-02-10T23:10:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyValidLoginWithParams -->

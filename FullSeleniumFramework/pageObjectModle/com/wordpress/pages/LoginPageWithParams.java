@@ -25,9 +25,9 @@ public class LoginPageWithParams {
 	}
 	
 	public void loginToWordpress(String userid, String pass) {							//
-		driver.findElement(username).sendKeys(userid);
-		driver.findElement(password).sendKeys(pass);
-		driver.findElement(loginButton).click();
+		typeUsername(userid);
+		typePassword(pass);
+		clickOnLoginButton();
 	}
 	
 	public void typeUsername(String uid) {							//
