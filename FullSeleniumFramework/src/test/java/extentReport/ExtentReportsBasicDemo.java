@@ -2,7 +2,7 @@
  * This is a stand alone test to show how to use Extent Report %%% for impotent ctrl+a and ctrl+i
  */
 
-package test;
+package extentReport;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,7 +16,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ExtendReportsBasicDemo {
+public class ExtentReportsBasicDemo {
 	
 	public static WebDriver driver = null;
 

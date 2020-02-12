@@ -1,8 +1,8 @@
 /* 
- * This is a stans alone test to show how to use Extent Report %%% for impotent ctrl+a and ctrl+i
+ * This is a stand alone test to show how to use Extent Report %%% for impotent ctrl+a and ctrl+i
  */
 
-package test;
+package extentReport;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
