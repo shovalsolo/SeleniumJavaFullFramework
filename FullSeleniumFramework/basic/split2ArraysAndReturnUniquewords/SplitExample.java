@@ -5,6 +5,8 @@
  */
 
 package split2ArraysAndReturnUniquewords;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
 
 
 public class SplitExample {
@@ -19,8 +21,8 @@ public class SplitExample {
 	
 	public static void split2Strings(String str1, String str2) {
 		
-		str1.toLowerCase();													//Changing to to Lower Case
-		str2.toLowerCase();													//Changing to to Lower Case
+		str1 = str1.toLowerCase();													//Changing to to Lower Case
+		str2 = str2.toLowerCase();													//Changing to to Lower Case
 		
 		String array1[]= str1.split(" ");									//Splitting string1 to the array1
 		
@@ -42,7 +44,7 @@ public class SplitExample {
 	}
 	
 	public static void concat2Arrays(String[] str1,String[] str2) {
-		String[] result = new String[str1.length+str2.length];			//Setting the size to be dynamic
+		String[] result = new String[str1.length+str2.length];								//Setting the size to be dynamic
 		int i;
 		for (i = 0; i < str1.length; i++) {
 			result[i] = str1[i];
@@ -54,6 +56,31 @@ public class SplitExample {
 		}
 		System.out.println("This is from concat 2 Arrays");
 		printArray(result);
+		RemoveDupWordsString(result);
+	}
+	
+	public static void RemoveDupWordsString(String[] str1) {
+		
+		
+        LinkedHashSet<String> lhSetWords = new LinkedHashSet<String>( Arrays.asList(str1) );	//convert String array to LinkedHashSet to remove duplicates
+		
+      
+        StringBuilder sbTemp = new StringBuilder();												//join the words again by space
+        int index = 0;
+        
+        for(String s : lhSetWords){
+            
+            if(index > 0)
+                sbTemp.append(" ");
+        
+            sbTemp.append(s);
+            index++;
+        }
+        
+        sbTemp.toString();
+        
+        System.out.println("String after removing duplicate words: ");
+        System.out.println(sbTemp);
 	}
 	
 }
