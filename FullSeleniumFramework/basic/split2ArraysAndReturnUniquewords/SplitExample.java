@@ -13,25 +13,25 @@ public class SplitExample {
 
 
 	public static void main(String[] args) {
-		String str1 = new String("We are working today from home"); 		// This is string 1
-		String str2 = new String("Working from home is the best");			// This is string 2
+		String str1 = new String("We are working today from home"); 							// This is string 1
+		String str2 = new String("Working from home is the best");								// This is string 2
 		
-		split2Strings(str1,str2);											//Sending 2 strings to be converted to be 2 arrays
+		split2Strings(str1,str2);																//Sending 2 strings to be converted to be 2 arrays
 	}
 	
 	public static void split2Strings(String str1, String str2) {
 		
-		str1 = str1.toLowerCase();													//Changing to to Lower Case
-		str2 = str2.toLowerCase();													//Changing to to Lower Case
+		str1 = str1.toLowerCase();																//Changing to to Lower Case
+		str2 = str2.toLowerCase();																//Changing to to Lower Case
 		
-		String array1[]= str1.split(" ");									//Splitting string1 to the array1
+		String array1[]= str1.split(" ");														//Splitting string1 to the array1
 		
-		String array2[]= str2.split(" ");									//Splitting string2 to the array2
+		String array2[]= str2.split(" ");														//Splitting string2 to the array2
 		
 		System.out.println("The string after split");
-		printArray(array1);													//Printing the array
+		printArray(array1);																		//Printing the array
 		
-		printArray(array2);													//Printing the array
+		printArray(array2);																		//Printing the array
 		
 		concat2Arrays(array1,array2);
 	}
@@ -44,7 +44,7 @@ public class SplitExample {
 	}
 	
 	public static void concat2Arrays(String[] str1,String[] str2) {
-		String[] result = new String[str1.length+str2.length];								//Setting the size to be dynamic
+		String[] result = new String[str1.length+str2.length];									//Setting the size to be dynamic
 		int i;
 		for (i = 0; i < str1.length; i++) {
 			result[i] = str1[i];
@@ -62,26 +62,16 @@ public class SplitExample {
 	public static void RemoveDupWordsString(String[] str1) {
 		
 		
-        LinkedHashSet<String> lhSetWords = new LinkedHashSet<String>( Arrays.asList(str1) );	//convert String array to LinkedHashSet to remove duplicates
-		
-      
-        StringBuilder sbTemp = new StringBuilder();												//join the words again by space
-        int index = 0;
+        LinkedHashSet<String> cleanSetWords = new LinkedHashSet<String>( Arrays.asList(str1) );	//convert String array to LinkedHashSet to remove duplicates
         
-        for(String s : lhSetWords){
-            
-            if(index > 0) 
-            {
-            	sbTemp.append(" ");
-            }
-            sbTemp.append(s);
-            index++;
-        }
+        System.out.println(cleanSetWords);
         
-        sbTemp.toString();
+        Object[] arrayC = cleanSetWords.toArray();												//converting LinkedHashSet back to array without the duplicates
         
-        System.out.println("String after removing duplicate words: ");
-        System.out.println(sbTemp);
+        System.out.println("printing the array");												//Printing the array
+        for (int i = 0; i < arrayC.length; i++) {
+			System.out.println(arrayC[i]);
+		}
 	}
 	
 }
