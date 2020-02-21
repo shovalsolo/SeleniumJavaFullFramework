@@ -13,7 +13,7 @@ public class SplitExample {
 
 
 	public static void main(String[] args) {
-		String str1 = new String("We are working today from home"); 							// This is string 1
+		String str1 = new String("We!@ are(* working$% ##today &*from &&^home"); 							// This is string 1
 		String str2 = new String("Working from home is the best");								// This is string 2
 		
 		split2Strings(str1,str2);																//Sending 2 strings to be converted to be 2 arrays
@@ -64,6 +64,13 @@ public class SplitExample {
 		
         LinkedHashSet<String> cleanSetWords = new LinkedHashSet<String>( Arrays.asList(str1) );	//convert String array to LinkedHashSet to remove duplicates
         
+        
+        String cleanString = cleanSetWords.toString();
+        
+        System.out.println("This is the clean string: "+ cleanString);
+        
+        System.out.println(cleanString);
+        
         System.out.println(cleanSetWords);
         
         Object[] arrayC = cleanSetWords.toArray();												//converting LinkedHashSet back to array without the duplicates
@@ -73,5 +80,4 @@ public class SplitExample {
 			System.out.println(arrayC[i]);
 		}
 	}
-	
 }
