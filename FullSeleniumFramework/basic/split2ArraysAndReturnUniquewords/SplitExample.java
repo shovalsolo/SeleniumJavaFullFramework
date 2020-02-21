@@ -70,9 +70,10 @@ public class SplitExample {
         
         for(String s : lhSetWords){
             
-            if(index > 0)
-                sbTemp.append(" ");
-        
+            if(index > 0) 
+            {
+            	sbTemp.append(" ");
+            }
             sbTemp.append(s);
             index++;
         }
