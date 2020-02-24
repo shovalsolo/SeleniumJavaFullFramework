@@ -8,7 +8,6 @@
  * Task: 
  * Parameters: string str1, string str2 (two sets of sentences of words)
  * Returns: a string consisting of words that appears in either set, but not both (disregarding for letter cases or punctuations)
- *
  */
 
 package split2ArraysAndReturnUniquewords;

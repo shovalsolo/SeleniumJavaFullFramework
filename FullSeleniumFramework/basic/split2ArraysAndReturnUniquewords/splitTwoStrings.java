@@ -14,7 +14,7 @@ public class splitTwoStrings {
 
 		str = str.toLowerCase();									//Changing to to Lower Case
 		
-		str = str.replaceAll("\\p{Punct}",""); 
+		str = str.replaceAll("\\p{Punct}",""); 						//Cleaning the strings from punctuations
 
 		String array1[]= str.split(" ");							//Splitting string1 to the array1																															//Printing the array
 		
