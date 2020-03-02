@@ -84,6 +84,7 @@
 				<configuration>
 					<includes>
 						<include>WindowSizeChromeDemo.java</include>	<!-- %%% This to run the one or more tests in the class %%% -->
+						<include>AutoITDemo.java</include>				<!-- %%% This to run the one or more tests in the class - This will run AutoITDemo from demo package %%% -->
 					</includes>
 					<!-- <suiteXmlFiles> <suiteXmlFile>${testngFile}</suiteXmlFile> </suiteXmlFiles> 
 						%%% This to run the whole class %%% -->
