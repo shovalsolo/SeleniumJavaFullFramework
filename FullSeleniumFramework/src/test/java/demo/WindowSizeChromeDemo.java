@@ -31,8 +31,9 @@ public class WindowSizeChromeDemo {
 		
 		driver.get("https://google.com");											//Navigate to url
 		System.out.println(driver.getTitle());										//Will print the title of the page
-		driver.findElement(By.name("q")).sendKeys("DealMaker");						//Sending keys to field
+		driver.findElement(By.name("q")).sendKeys("benchsci");						//Sending keys to field
 		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);						//Sending Enter key
+		
 
 		driver.close();
 		driver.quit();
