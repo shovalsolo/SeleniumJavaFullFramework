@@ -30,7 +30,7 @@ public class dockerGoogleSearchChrome {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
-	@Test
+	@Test (description= "Searching in youtube")
 	public void googleSearch() throws InterruptedException {
 		
 		driver.navigate().to("https://www.youtube.com/");
