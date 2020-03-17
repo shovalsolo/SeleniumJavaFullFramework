@@ -28,4 +28,3 @@ echo Success																	--Print message
 1. Go to C:\Program Files\Jenkins\
 2. Run the following command: java -jar jenkins.war --httpPort=9191
 3. Open the browser URL: http://localhost:9191/
-

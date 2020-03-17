@@ -83,8 +83,10 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<includes>
-						<include>WindowSizeChromeDemo.java</include>	<!-- %%% This to run the one or more tests in the class %%% -->
-						<include>AutoITDemo.java</include>				<!-- %%% This to run the one or more tests in the class - This will run AutoITDemo from demo package %%% -->
+						<include>WindowSizeChromeDemo.java</include>	<!-- %%% This will run the one or more tests in the class %%% -->
+						<include>AutoITDemo.java</include>				<!-- %%% This will run the one or more tests in the class - This will run AutoITDemo from demo package %%% -->
+						<include>dockerGoogleSearchChrome.java</include>	<!-- %%% This will run the test on docker container %%% -->
+						<include>dockerGoogleSearchFireFox.java</include>	<!-- %%% This will run the test on docker container %%% -->
 					</includes>
 					<!-- <suiteXmlFiles> <suiteXmlFile>${testngFile}</suiteXmlFile> </suiteXmlFiles> 
 						%%% This to run the whole class %%% -->

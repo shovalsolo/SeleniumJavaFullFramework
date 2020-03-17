@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="31999" started-at="2020-03-17T20:46:27Z" finished-at="2020-03-17T20:46:59Z">
+  <suite name="Suite" duration-ms="32797" started-at="2020-03-17T20:59:40Z" finished-at="2020-03-17T21:00:13Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="31999" started-at="2020-03-17T20:46:27Z" finished-at="2020-03-17T20:46:59Z">
+    <test name="Test" duration-ms="32797" started-at="2020-03-17T20:59:40Z" finished-at="2020-03-17T21:00:13Z">
       <class name="com.docker.dockerGoogleSearchFireFox">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.docker.dockerGoogleSearchFireFox@6500df86]" name="setUp" is-config="true" duration-ms="12220" started-at="2020-03-17T20:46:27Z" finished-at="2020-03-17T20:46:39Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.docker.dockerGoogleSearchFireFox@6500df86]" name="setUp" is-config="true" duration-ms="13687" started-at="2020-03-17T20:59:40Z" finished-at="2020-03-17T20:59:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="googleSearch()[pri:0, instance:com.docker.dockerGoogleSearchFireFox@6500df86]" name="googleSearch" duration-ms="19751" started-at="2020-03-17T20:46:39Z" description="Searching in google" finished-at="2020-03-17T20:46:59Z">
+        <test-method status="PASS" signature="googleSearch()[pri:0, instance:com.docker.dockerGoogleSearchFireFox@6500df86]" name="googleSearch" duration-ms="19087" started-at="2020-03-17T20:59:54Z" description="Searching in google" finished-at="2020-03-17T21:00:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleSearch -->
       </class> <!-- com.docker.dockerGoogleSearchFireFox -->
       <class name="com.docker.dockerGoogleSearchChrome">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.docker.dockerGoogleSearchChrome@42dafa95]" name="setUp" is-config="true" duration-ms="1437" started-at="2020-03-17T20:46:27Z" finished-at="2020-03-17T20:46:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.docker.dockerGoogleSearchChrome@42dafa95]" name="setUp" is-config="true" duration-ms="1632" started-at="2020-03-17T20:59:40Z" finished-at="2020-03-17T20:59:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="googleSearch()[pri:0, instance:com.docker.dockerGoogleSearchChrome@42dafa95]" name="googleSearch" duration-ms="12070" started-at="2020-03-17T20:46:29Z" description="Searching in youtube" finished-at="2020-03-17T20:46:41Z">
+        <test-method status="PASS" signature="googleSearch()[pri:0, instance:com.docker.dockerGoogleSearchChrome@42dafa95]" name="googleSearch" duration-ms="11528" started-at="2020-03-17T20:59:42Z" description="Searching in youtube" finished-at="2020-03-17T20:59:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleSearch -->
