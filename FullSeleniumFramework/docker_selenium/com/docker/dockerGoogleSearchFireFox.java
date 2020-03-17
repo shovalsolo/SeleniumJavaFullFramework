@@ -9,6 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -31,17 +32,17 @@ public class dockerGoogleSearchFireFox {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
-	@Test
+	@Test (description= "Searching in google")
 	public void googleSearch() throws InterruptedException {
 		
 		driver.navigate().to("https://www.google.com/");
-		driver.findElement(By.xpath("//input[@type='text' and @id='search']")).sendKeys("Rock music");;
-		driver.findElement(By.xpath("//*[@id='search-icon-legacy']")).click();
+		driver.findElement(By.name("q")).sendKeys("Rock music");
+		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
 		System.out.println("Search in firefox Completed");
 		
 		Thread.sleep(5000);
 		driver.close();
-		driver.quit();
+		//driver.quit();
 	}
 	
 	public static void tearDown() throws Exception {
@@ -49,5 +50,4 @@ public class dockerGoogleSearchFireFox {
 			System.out.println("Completed Test in Docker Container  << firefox >>");
 		}
 	}
-
 }

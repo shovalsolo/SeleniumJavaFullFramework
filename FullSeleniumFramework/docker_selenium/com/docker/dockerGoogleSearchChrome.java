@@ -34,7 +34,7 @@ public class dockerGoogleSearchChrome {
 	public void googleSearch() throws InterruptedException {
 		
 		driver.navigate().to("https://www.youtube.com/");
-		driver.findElement(By.xpath("//input[@type='text' and @id='search']")).sendKeys("Rock music");;
+		driver.findElement(By.xpath("//input[@type='text' and @id='search']")).sendKeys("Rock music");
 		driver.findElement(By.xpath("//*[@id='search-icon-legacy']")).click();
 		System.out.println("Search in chrome Completed");
 		

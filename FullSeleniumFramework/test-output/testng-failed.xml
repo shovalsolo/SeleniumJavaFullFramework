@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.docker.dockerGoogleSearchChrome">
+      <class name="com.docker.dockerGoogleSearchFireFox">
         <methods>
-          <include name="setUp"/>
           <include name="googleSearch"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.docker.dockerGoogleSearchChrome -->
+      </class> <!-- com.docker.dockerGoogleSearchFireFox -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
