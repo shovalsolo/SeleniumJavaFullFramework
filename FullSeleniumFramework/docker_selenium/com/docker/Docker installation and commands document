@@ -1,0 +1,54 @@
+Docker installation and commands
+1. Install docker
+2. Disk image location is C:\ProgramData\DockerDesktop\vm-data\
+3. After running the images the url adresses are:
+
+127.0.0.1:4545 - for the chrome debug image
+or
+localhost:4444 - - for the firefox debug image
+
+and
+
+127.0.0.1:4444 - - for the firefox debug image
+or
+localhost:4444 - - for the firefox debug image
+
+
+Commands
+1. docker version - will return the version
+
+2. docker images - will show the images we pulled
+
+3. docker pull selenium/hub - will pull the selenium hub image
+
+4. docker pull selenium/standalone-chrome-debug - will pull the selenium image with an option to view and debug with vnc
+
+5. docker pull selenium/standalone-chrome - will pull the selenium image for chrome
+
+6. docker pull selenium/standalone-firefox - will pull the selenium image for firefox
+
+7. docker pull selenium/standalone-firefox-debug - will pull the selenium image for firefox with an option to view and debug with vnc
+
+8. To connect to the node for debug use the following links: with port 5900 -  the commands will run the imaga
+
+docker run -d -p 4545:4444 -p 5900:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-zirconium
+# OR
+docker run -d -p 4444:4444 -p 5901:5900 -v /dev/shm:/dev/shm selenium/standalone-firefox-debug:3.141.59-zirconium
+
+9. docker ps -a  -  to check if there is a process runinnng
+
+10. When the nodes are running open vnc viewer and enter the ports 
+127.0.0.1:5900 - For the chrome node password is secret
+127.0.0.1:5900 - For the firefox node password is secret
+
+11. docker logs -f containerID
+for example
+docker logs -f 421396f0ac04
+
+12. Create an selenium test 
+
+
+
+
+
+

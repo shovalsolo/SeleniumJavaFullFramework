@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25594" started-at="2020-03-03T13:41:49Z" finished-at="2020-03-03T13:42:14Z">
+  <suite name="Default suite" duration-ms="13594" started-at="2020-03-17T20:11:17Z" finished-at="2020-03-17T20:11:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25594" started-at="2020-03-03T13:41:49Z" finished-at="2020-03-03T13:42:14Z">
-      <class name="demo.WindowSizeChromeDemo">
-        <test-method status="PASS" signature="test()[pri:0, instance:demo.WindowSizeChromeDemo@239963d8]" name="test" duration-ms="25540" started-at="2020-03-03T13:41:49Z" finished-at="2020-03-03T13:42:14Z">
+    <test name="Default test" duration-ms="13594" started-at="2020-03-17T20:11:17Z" finished-at="2020-03-17T20:11:31Z">
+      <class name="com.docker.dockerGoogleSearchChrome">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.docker.dockerGoogleSearchChrome@589838eb]" name="setUp" is-config="true" duration-ms="2272" started-at="2020-03-17T20:11:17Z" finished-at="2020-03-17T20:11:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- demo.WindowSizeChromeDemo -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="googleSearch()[pri:0, instance:com.docker.dockerGoogleSearchChrome@589838eb]" name="googleSearch" duration-ms="11291" started-at="2020-03-17T20:11:20Z" finished-at="2020-03-17T20:11:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearch -->
+      </class> <!-- com.docker.dockerGoogleSearchChrome -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
