@@ -1,3 +1,8 @@
+/* 
+ * This test is running on docker container on local machine
+ * Adding DesiredCapabilities to set the information to the browser
+ */
+
 package com.docker;
 
 import java.net.MalformedURLException;
@@ -43,5 +48,4 @@ public class dockerGoogleSearchChrome {
 			System.out.println("Completed Test in Docker Container  << Chrome >>");
 		}
 	}
-
 }
