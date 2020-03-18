@@ -1,0 +1,20 @@
+Steps to start
+
+1. Pull the following images from https://hub.docker.com/
+selenium/hub
+selenium/node-firefox-debug
+selenium/node-chrome-debug
+
+2. Instructions for selenium/hub are in -> https://github.com/SeleniumHQ/docker-selenium/tree/master/Hub
+To create the node run:
+docker run -d -p 4646:4444 --name selenium-hub selenium/hub
+
+3. Instructions for node-firefox-debug are in -> https://github.com/SeleniumHQ/docker-selenium/tree/master/NodeFirefoxDebug
+To create the node run:
+docker run -d -p 5902:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-firefox-debug
+
+4. Instructions for node-chrome-debug are in -> https://github.com/SeleniumHQ/docker-selenium/tree/master/NodeChromeDebug
+To create the node run:
+docker run -d -p 5903:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-chrome-debug
+
+5. 

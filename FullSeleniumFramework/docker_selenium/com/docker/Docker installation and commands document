@@ -24,7 +24,7 @@ Commands
 
 2. docker images - will show the images we pulled
 
-3. docker pull selenium/hub - will pull the selenium hub image
+3. docker pull selenium/hub - will pull the selenium hub image from https://hub.docker.com/
 
 4. docker pull selenium/standalone-chrome-debug - will pull the selenium image with an option to view and debug with vnc
 
