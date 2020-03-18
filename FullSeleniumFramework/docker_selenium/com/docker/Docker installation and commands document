@@ -36,8 +36,9 @@ Commands
 
 8. To connect to the node for debug use the following links: with port 5900 -  the commands will run the imaga
 
+For chrome
 docker run -d -p 4545:4444 -p 5900:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-zirconium
-# OR
+# And for firefox
 docker run -d -p 4444:4444 -p 5901:5900 -v /dev/shm:/dev/shm selenium/standalone-firefox-debug:3.141.59-zirconium
 
 9. docker ps -a  -  to check if there is a process runinnng
@@ -51,6 +52,20 @@ for example
 docker logs -f 421396f0ac04
 
 12. Create an selenium test 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+After installation To start using docker
+
+1. Start Docker desktop
+2. Start each node
+3. Open VNC viewer
+4. Start VNC Server
+5. In Docker desktop go to the node and start it
+6. In cmd run the following command to check the status of the node
+docker ps -a
+7. In VNC viewer open the nodes
+127.0.0.1:5900
+127.0.0.1:5901
 
 
 
