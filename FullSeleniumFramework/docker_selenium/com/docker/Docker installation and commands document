@@ -37,9 +37,9 @@ Commands
 8. To connect to the node for debug use the following links: with port 5900 -  the commands will run the imaga
 
 For chrome
-docker run -d -p 4545:4444 -p 5900:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-zirconium
+docker run -d -p 4545:4444 -p 5903:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-zirconium
 # And for firefox
-docker run -d -p 4444:4444 -p 5901:5900 -v /dev/shm:/dev/shm selenium/standalone-firefox-debug:3.141.59-zirconium
+docker run -d -p 4646:4444 -p 5904:5900 -v /dev/shm:/dev/shm selenium/standalone-firefox-debug:3.141.59-zirconium
 
 9. docker ps -a  -  to check if there is a process runinnng
 

@@ -3,8 +3,8 @@
 <suite name="Suite" parallel="classes">
   <test thread-count="5" name="Test" parallel="classes">
     <classes>
-      <class name="com.docker.dockerGoogleSearchChrome"/>
-      <class name="com.docker.dockerGoogleSearchFireFox"/>
+      <class name="com.docker.dockerGoogleSearchChrome"/>	<!-- Will run in parallel and will go directly to the chrome node -->
+      <class name="com.docker.dockerGoogleSearchFireFox"/>	<!-- Will run in parallel and will go directly to the firefox node -->
     </classes>
   </test> 													<!-- Test -->
 </suite> 													<!-- Suite -->

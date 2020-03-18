@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>					<!--Running  dockerGoogleSearchChrome and dockerGoogleSearchFirefox on the hub to the correct docker container-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+  <test thread-count="5" name="Test" parallel="classes">
+    <classes>
+      <class name="com.grid.docker.dockerGoogleSearchChrome"/>	<!-- Will run in parallel and will pass the hub to the chrome node -->
+      <class name="com.grid.docker.dockerGoogleSearchFireFox"/>	<!-- Will run in parallel and will pass the hub to the firefox node -->
+    </classes>
+  </test> 												<!-- Test -->
+</suite> 												<!-- Suite -->

@@ -2,10 +2,9 @@
  * This test is running on docker container on local machine
  * Adding DesiredCapabilities to set the information to the browser
  * To run this TC use testng9.xml and it will run in parallel both dockerGoogleSearchChrome and dockerGoogleSearchFirefox 
- * This will run on selenium/standalone-chrome-debug 4545:5903
  */
 
-package com.docker;
+package com.grid.docker;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -27,7 +26,7 @@ public class dockerGoogleSearchChrome {
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setPlatform(Platform.LINUX);
 		cap.setVersion("");
-		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4545/wd/hub"),cap);
+		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"),cap);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
