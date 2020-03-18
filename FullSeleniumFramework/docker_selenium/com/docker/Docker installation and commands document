@@ -14,6 +14,11 @@ or
 localhost:4444 - - for the firefox debug image
 
 
+4. Install Vnc server register and connect
+5. Install Vnc viewer register and connect
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Commands
 1. docker version - will return the version
 
@@ -39,7 +44,7 @@ docker run -d -p 4444:4444 -p 5901:5900 -v /dev/shm:/dev/shm selenium/standalone
 
 10. When the nodes are running open vnc viewer and enter the ports 
 127.0.0.1:5900 - For the chrome node password is secret
-127.0.0.1:5900 - For the firefox node password is secret
+127.0.0.1:5901 - For the firefox node password is secret
 
 11. docker logs -f containerID
 for example
