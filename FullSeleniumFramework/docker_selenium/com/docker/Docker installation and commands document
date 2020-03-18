@@ -69,8 +69,11 @@ After installation To start using docker
 6. In cmd run the following command to check the status of the node
 docker ps -a
 7. In VNC viewer open the nodes
-127.0.0.1:5900
-127.0.0.1:5901
+
+127.0.0.1:5900   - selenium/node-chrome-debug
+127.0.0.1:5901   - selenium/node-firefox-debug
+127.0.0.1:5902   - standalone-chrome-debug
+127.0.0.1:5903   - standalone-firefox-debug
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Final nodes configuration
