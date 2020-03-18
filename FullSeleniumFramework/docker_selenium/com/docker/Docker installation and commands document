@@ -53,6 +53,11 @@ docker logs -f 421396f0ac04
 
 12. Create an selenium test 
 
+Other commands
+13. docker stop $(docker ps -aq) - will stop all containers
+14. docker rm $(docker ps -aq) - remove all containers
+15. docker rmi $(docker images -q) - remove all containers
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 After installation To start using docker
 
