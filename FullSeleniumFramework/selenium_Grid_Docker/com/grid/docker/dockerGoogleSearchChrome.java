@@ -26,7 +26,7 @@ public class dockerGoogleSearchChrome {
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setPlatform(Platform.LINUX);
 		cap.setVersion("");
-		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"),cap);
+		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"),cap);	//will use port 4444 to run from the hub to the correct node
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
