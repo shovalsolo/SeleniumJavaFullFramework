@@ -75,6 +75,11 @@ docker ps -a
 127.0.0.1:5902   - standalone-chrome-debug
 127.0.0.1:5903   - standalone-firefox-debug
 
+8. Docker-compose version  - Will give the compose version
+
+9. Docker-compose up -d  - Will show if compose is up
+
+10. Docker-compose -f <filename> up -d  - Will use only if the file is Yml file
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Final nodes configuration
 
