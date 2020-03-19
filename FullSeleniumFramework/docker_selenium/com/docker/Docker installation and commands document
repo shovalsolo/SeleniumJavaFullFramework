@@ -77,9 +77,10 @@ docker ps -a
 
 8. Docker-compose version  - Will give the compose version
 
-9. Docker-compose up -d  - Will show if compose is up
+9. Docker-compose up -d  - Will run the docker-compose.yaml file and will set it up
 
 10. Docker-compose -f <filename> up -d  - Will use only if the file is Yml file
+example docker-compose -f DockerGridConfig.yaml up -d
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Final nodes configuration
 
