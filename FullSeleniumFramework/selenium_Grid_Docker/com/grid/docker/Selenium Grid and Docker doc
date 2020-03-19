@@ -12,11 +12,11 @@ http://127.0.0.1:4646/grid/console
 
 3. Instructions for node-chrome-debug are in -> https://github.com/SeleniumHQ/docker-selenium/tree/master/NodeChromeDebug
 To create the node run:
-docker run -d -p 5900:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-chrome-debug
+docker run -d -p 5901:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-chrome-debug
 
 4. Instructions for node-firefox-debug are in -> https://github.com/SeleniumHQ/docker-selenium/tree/master/NodeFirefoxDebug
 To create the node run:
-docker run -d -p 5901:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-firefox-debug
+docker run -d -p 5902:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-firefox-debug
 
 5. When running the test the url will be http://127.0.0.1:4444/wd/hub because it will run from the hub to the correct container ->hub->chrome->firefox
 
