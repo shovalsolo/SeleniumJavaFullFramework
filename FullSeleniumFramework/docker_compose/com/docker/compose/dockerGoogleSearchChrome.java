@@ -1,7 +1,7 @@
 /* 
  * This test is running on docker container on local machine
  * Adding DesiredCapabilities to set the information to the browser
- * To run this TC use testng9.xml and it will run in parallel both dockerGoogleSearchChrome and dockerGoogleSearchFirefox 
+ * To run this TC use testng11.xml and it will run in parallel tests on 4 nods using docker compose
  */
 
 package com.docker.compose;

@@ -83,13 +83,13 @@ example docker-compose -f DockerGridConfig.yaml up -d
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Final nodes configuration
 
-Standalone setup
+--Standalone setup--
 -Chrome:
 docker run -d -p 4545:4444 -p 5903:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-zirconium
 -Firefox:
 docker run -d -p 4646:4444 -p 5904:5900 -v /dev/shm:/dev/shm selenium/standalone-firefox-debug:3.141.59-zirconium
 
-Hub node setup
+--Hub node setup--
 -Node Hub:
 docker run -d -p 4444:4444 --name selenium-hub selenium/hub
 -Chrome:
@@ -97,9 +97,9 @@ docker run -d -p 5902:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium
 -Firefox the port has to be 5901 to work
 docker run -d -p 5901:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-firefox-debug
 
-Compose setup
+--Compose setup--
 Seleniumhub:
-    image: selenium/node-chrome-debug ports: 4444:4444 - 5900:5900
+    image: selenium/hub ports: 4444:4444 - 5900:5900
 
 Chromenode:
     image: selenium/node-chrome-debug ports: 4747:4444 - 5902:5900

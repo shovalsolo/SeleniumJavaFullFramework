@@ -18,7 +18,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class dockerGoogleSearchFireFox {
+public class dockerGoogleSearchFireFox2 {
 	static RemoteWebDriver driver;
 	
 	@BeforeClass
@@ -37,7 +37,7 @@ public class dockerGoogleSearchFireFox {
 	public void googleSearch() throws InterruptedException {
 		
 		driver.navigate().to("https://www.google.com/");
-		driver.findElement(By.name("q")).sendKeys("Rock music");
+		driver.findElement(By.name("q")).sendKeys("Metallica");
 		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
 		System.out.println("Search in firefox Completed");
 		

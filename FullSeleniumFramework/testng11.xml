@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>								<!--Running 4 tests on 4 nods using docker compose-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="4">
+  <test  name="Test" >
+    <classes>
+      <class name="com.docker.compose.dockerGoogleSearchChrome"/>
+      <class name="com.docker.compose.dockerGoogleSearchChrome2"/>
+      <class name="com.docker.compose.dockerGoogleSearchFireFox"/>
+      <class name="com.docker.compose.dockerGoogleSearchFireFox2"/>
+    </classes>
+  </test> 															<!-- Test -->
+</suite> 															<!-- Suite -->
