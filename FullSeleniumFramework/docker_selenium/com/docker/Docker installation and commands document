@@ -80,6 +80,8 @@ docker ps -a
 
 10. Docker-compose -f <filename> up -d  - Will use only if the file is Yml file
 example docker-compose -f DockerGridConfig.yaml up -d
+
+11. docker info  - Will give the information about the docker env
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Final nodes configuration
 
