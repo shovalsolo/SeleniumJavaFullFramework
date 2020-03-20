@@ -13,7 +13,6 @@ and
 or
 localhost:4444 - - for the firefox debug image
 
-
 4. Install Vnc server register and connect
 5. Install Vnc viewer register and connect
 
@@ -84,23 +83,32 @@ example docker-compose -f DockerGridConfig.yaml up -d
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Final nodes configuration
 
-Node Hub--
-docker run -d -p 4444:4444 --name selenium-hub selenium/hub
-
-For chrome
-docker run -d -p 5902:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-chrome-debug
-
-For firefox the port has to be 5901 to work
-docker run -d -p 5901:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-firefox-debug
-
-
-Standalone-- 
-For chrome
+Standalone setup
+-Chrome:
 docker run -d -p 4545:4444 -p 5903:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-zirconium
-
-And for firefox
+-Firefox:
 docker run -d -p 4646:4444 -p 5904:5900 -v /dev/shm:/dev/shm selenium/standalone-firefox-debug:3.141.59-zirconium
 
+Hub node setup
+-Node Hub:
+docker run -d -p 4444:4444 --name selenium-hub selenium/hub
+-Chrome:
+docker run -d -p 5902:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-chrome-debug
+-Firefox the port has to be 5901 to work
+docker run -d -p 5901:5900 --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-firefox-debug
 
+Compose setup
+Seleniumhub:
+    image: selenium/node-chrome-debug ports: 4444:4444 - 5900:5900
 
+Chromenode:
+    image: selenium/node-chrome-debug ports: 4747:4444 - 5902:5900
 
+Chromenode2:
+    image: selenium/node-chrome-debug ports: 4544:4444 - 5905:5900
+
+Firefoxnode:
+    image: selenium/node-firefox-debug ports: 4546:4444 - 5901:5900
+
+Firefoxnode2:
+    image: selenium/node-firefox-debug ports: 4547:4444 - 5906:5900
