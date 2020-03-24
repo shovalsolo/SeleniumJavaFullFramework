@@ -3,12 +3,12 @@
 <suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
   <test thread-count="4" name="Test(failed)" parallel="classes">
     <classes>
-      <class name="com.docker.compose.dockerGoogleSearchChrome2">
+      <class name="zalenium.dockerGoogleSearchFireFox">
         <methods>
-          <include name="setUp"/>
           <include name="googleSearch"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.docker.compose.dockerGoogleSearchChrome2 -->
+      </class> <!-- zalenium.dockerGoogleSearchFireFox -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

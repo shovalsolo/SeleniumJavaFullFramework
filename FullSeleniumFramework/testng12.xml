@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>						<!--Running 4 tests on 4 nods using docker with zalenium-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Suite" parallel="classes">
+  <test thread-count="4" name="Test" parallel="classes">
+    <classes>
+      <class name="zalenium.dockerGoogleSearchChrome"/>
+      <class name="zalenium.dockerGoogleSearchFireFox"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
