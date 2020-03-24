@@ -1,7 +1,10 @@
 Zalenium Doc
+
 Dock location:
 https://opensource.zalando.com/zalenium/
 https://github.com/zalando/zalenium
+http://127.0.0.1:4444/grid/admin/live
+http://127.0.0.1:4444/dashboard/#
 
 1. Pull the following nodes from https://opensource.zalando.com/zalenium/
     docker pull elgalu/selenium
