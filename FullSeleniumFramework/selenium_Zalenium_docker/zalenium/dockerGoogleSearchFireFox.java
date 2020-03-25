@@ -1,8 +1,9 @@
 /* 
- * This test is running on docker container on zalenium container
- * Adding DesiredCapabilities to set the information to the browser
+ * This test is running on docker with zalenium container
+ * Adding DesiredCapabilities to set the information to the browser and the name of the test
  * To run this TC use testng12.xml and it will run in parallel tests on 2 nods using docker zalenium container
  */
+
 
 package zalenium;
 
