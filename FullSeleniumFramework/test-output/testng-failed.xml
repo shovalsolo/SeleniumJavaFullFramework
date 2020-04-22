@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
-  <test thread-count="4" name="Test(failed)" parallel="classes">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="zalenium.dockerGoogleSearchFireFox">
+      <class name="demo.AutoITDemo">
         <methods>
-          <include name="googleSearch"/>
-          <include name="setUp"/>
+          <include name="uploadFile"/>
         </methods>
-      </class> <!-- zalenium.dockerGoogleSearchFireFox -->
+      </class> <!-- demo.AutoITDemo -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
