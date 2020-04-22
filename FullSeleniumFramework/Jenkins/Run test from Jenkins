@@ -29,3 +29,9 @@ echo Success																	--Print message
 2. Run the following command: java -jar jenkins.war --httpPort=9191
 3. Open the browser URL: http://localhost:9191/
 
+
+
+
+Other Info:
+1. Jenkind data location:
+C:\Users\Solomon\.jenkins
