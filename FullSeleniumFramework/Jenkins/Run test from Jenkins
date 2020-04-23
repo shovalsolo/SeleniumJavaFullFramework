@@ -44,3 +44,14 @@ Go to folder C:\Program Files\Jenkins\
 Rename the old Jenkins.war to Jenkins.war.old
 Put the new Jenkins.war file and run the command 
 java -jar jenkins.war --httpPort=9191
+
+4. Jenkins wiki for cli commands in the url - http://localhost:9191/cli/
+
+5. To login to cli use the following command
+java -jar jenkins-cli.jar -s http://localhost:8080 -auth username:password
+
+6. To run the jenkins cli go to C:\Program Files\Jenkins\jenkins cli
+java -jar jenkins-cli.jar -s http://localhost:9191/ -webSocket help
+
+7. Command example: java -jar jenkins-cli.jar -s http://localhost:9191/ who-am-i
+
