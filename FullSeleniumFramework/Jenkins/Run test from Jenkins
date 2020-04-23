@@ -35,3 +35,12 @@ echo Success																	--Print message
 Other Info:
 1. Jenkind data location:
 C:\Users\Solomon\.jenkins
+
+2. To restart jenkins from url
+http://localhost:9191/restart
+
+3. To update Jenkins when auto update is not working download the generic Java package war file
+Go to folder C:\Program Files\Jenkins\
+Rename the old Jenkins.war to Jenkins.war.old
+Put the new Jenkins.war file and run the command 
+java -jar jenkins.war --httpPort=9191
