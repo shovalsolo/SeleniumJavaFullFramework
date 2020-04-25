@@ -1,0 +1,25 @@
+Jenkins document
+
+New Job info
+Build Triggers:
+
+-Trigger builds remotely (e.g., from scripts) - To trigger remotely using the following link:
+JENKINS_URL/job/Test1/build?token=TOKEN_NAM
+JENKINS_URL - change to the jenkins URL
+token - Give a token and set here
+
+
+-Build after other projects are built - This will trigger after other job will run
+has 3 options run when stable, unstable, fails
+And give the job name
+
+
+-Build periodically - The job will run after an expression will trigger
+* * * * * means every minute
+H * * * * means to poll once per hour
+
+
+-GitHub hook trigger for GITScm polling - 
+
+
+-Poll SCM - 
