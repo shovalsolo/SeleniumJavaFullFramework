@@ -2,64 +2,54 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[=======Driver-setUp=======]]>
+      <![CDATA[=======setUp Started=======]]>
     </line>
     <line>
-      <![CDATA[=======Navigate to url=======]]>
+      <![CDATA[=======setUp Ended=======]]>
     </line>
     <line>
-      <![CDATA[=======Clicking on upload file button=======]]>
+      <![CDATA[=======Login Ended=======]]>
     </line>
     <line>
-      <![CDATA[=======Clicking on upload file button Failed=======]]>
+      <![CDATA[=======tearDown Started=======]]>
     </line>
     <line>
-      <![CDATA[=======Give script location=======]]>
-    </line>
-    <line>
-      <![CDATA[=======Locating and clicking the image button=======]]>
-    </line>
-    <line>
-      <![CDATA[=======finished message=======]]>
-    </line>
-    <line>
-      <![CDATA[=======finished message - Failed=======]]>
+      <![CDATA[=======tearDown Ended=======]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28911" started-at="2020-04-22T11:24:52 EDT" finished-at="2020-04-22T11:25:21 EDT">
+  <suite name="Default suite" duration-ms="15512" started-at="2020-04-25T15:55:47 EDT" finished-at="2020-04-25T15:56:03 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28911" started-at="2020-04-22T11:24:52 EDT" finished-at="2020-04-22T11:25:21 EDT">
-      <class name="demo.AutoITDemo">
-        <test-method status="PASS" signature="uploadFile()[pri:0, instance:demo.AutoITDemo@704a52ec]" name="uploadFile" duration-ms="28867" started-at="2020-04-22T11:24:52 EDT" finished-at="2020-04-22T11:25:21 EDT">
+    <test name="Default test" duration-ms="15512" started-at="2020-04-25T15:55:47 EDT" finished-at="2020-04-25T15:56:03 EDT">
+      <class name="demo.WindowSizeChromeDemo">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:demo.WindowSizeChromeDemo@17d677df]" name="setUp" is-config="true" duration-ms="4238" started-at="2020-04-25T15:55:47 EDT" finished-at="2020-04-25T15:55:52 EDT">
           <reporter-output>
             <line>
-              <![CDATA[=======Driver-setUp=======]]>
+              <![CDATA[=======setUp Started=======]]>
             </line>
             <line>
-              <![CDATA[=======Navigate to url=======]]>
-            </line>
-            <line>
-              <![CDATA[=======Clicking on upload file button=======]]>
-            </line>
-            <line>
-              <![CDATA[=======Clicking on upload file button Failed=======]]>
-            </line>
-            <line>
-              <![CDATA[=======Give script location=======]]>
-            </line>
-            <line>
-              <![CDATA[=======Locating and clicking the image button=======]]>
-            </line>
-            <line>
-              <![CDATA[=======finished message=======]]>
-            </line>
-            <line>
-              <![CDATA[=======finished message - Failed=======]]>
+              <![CDATA[=======setUp Ended=======]]>
             </line>
           </reporter-output>
-        </test-method> <!-- uploadFile -->
-      </class> <!-- demo.AutoITDemo -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login()[pri:1, instance:demo.WindowSizeChromeDemo@17d677df]" name="login" duration-ms="10543" started-at="2020-04-25T15:55:52 EDT" finished-at="2020-04-25T15:56:02 EDT">
+          <reporter-output>
+            <line>
+              <![CDATA[=======Login Ended=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:demo.WindowSizeChromeDemo@17d677df]" name="tearDown" is-config="true" duration-ms="692" started-at="2020-04-25T15:56:02 EDT" finished-at="2020-04-25T15:56:03 EDT">
+          <reporter-output>
+            <line>
+              <![CDATA[=======tearDown Started=======]]>
+            </line>
+            <line>
+              <![CDATA[=======tearDown Ended=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- demo.WindowSizeChromeDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
