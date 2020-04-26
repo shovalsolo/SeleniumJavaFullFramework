@@ -3,23 +3,34 @@ Jenkins document
 New Job info
 Build Triggers:
 
--Trigger builds remotely (e.g., from scripts) - To trigger remotely using the following link:
+1. Trigger builds remotely (e.g., from scripts) - To trigger remotely using the following link:
 JENKINS_URL/job/Test1/build?token=TOKEN_NAM
 JENKINS_URL - change to the jenkins URL
 token - Give a token and set here
 
 
--Build after other projects are built - This will trigger after other job will run
+2. Build after other projects are built - This will trigger after other job will run
 has 3 options run when stable, unstable, fails
 And give the job name
 
 
--Build periodically - The job will run after an expression will trigger
+3. Build periodically - The job will run after an expression will trigger
 * * * * * means every minute
 H * * * * means to poll once per hour
 
 
--GitHub hook trigger for GITScm polling - 
+4. GitHub hook trigger for GITScm polling - 
 
 
--Poll SCM - 
+5. Poll SCM - Pull from git repository
+* * * * * means every minute
+H * * * * means to poll once per hour
+
+
+WAR/EAR file deployment
+1. Need to set the WAR/EAR file in the workspace of the jenkins job C:\Users\Solomon\.jenkins\workspace\"job-name"
+2. Need to set the Credentials in the file tomcat-users.xml in location C:\Programming\Tomcat_8.5.54\conf\tomcat-users.xml and restart the tomcat
+3. Update the Credentials in the Deploy War to container->containers->Credentials
+4. Give the Tomcat URL http://localhost:8181/
+5. Give the WAR/EAR files should be **/*.war and the file should be in C:\Users\Solomon\.jenkins\workspace\"job-name"
+6. And Context path should be the war file without the .war
