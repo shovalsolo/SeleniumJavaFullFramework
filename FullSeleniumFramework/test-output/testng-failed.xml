@@ -3,13 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.WindowSizeChromeDemo">
+      <class name="demo.TestShowcaseDesignersSite">
         <methods>
+          <include name="openUrl"/>
+          <include name="clickOnContact"/>
+          <include name="clickOnShowcase"/>
+          <include name="clickOnServices"/>
+          <include name="clickOnPackages"/>
           <include name="setUp"/>
-          <include name="login"/>
+          <include name="clickOnDesigners"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- demo.WindowSizeChromeDemo -->
+      </class> <!-- demo.TestShowcaseDesignersSite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
