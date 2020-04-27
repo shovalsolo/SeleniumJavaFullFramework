@@ -25,9 +25,9 @@ public class WindowSizeChromeDemo {
 		try {
 			Reporter.log("=======setUp Started=======",true);
 			WebDriverManager.chromedriver().setup();
-			ChromeOptions options = new ChromeOptions();								//Creating an object of ChromeOptions						$$$
-			options.addArguments("window-size=1080,750");								//Setting the argument for window-size to options object	$$$
-			driver = new ChromeDriver(options);											//Passing the options object the the ChromeDriver			$$$								//Setting the browser selected and calling the function from the 
+			ChromeOptions options = new ChromeOptions();									//Creating an object of ChromeOptions						$$$
+			options.addArguments("window-size=1080,750");									//Setting the argument for window-size to options object	$$$
+			driver = new ChromeDriver(options);												//Passing the options object the the ChromeDriver			$$$								//Setting the browser selected and calling the function from the 
 			Reporter.log("=======setUp Ended=======",true);
 		} 
 		catch (Exception e) {
@@ -42,10 +42,10 @@ public class WindowSizeChromeDemo {
 	@Test(priority = 1)
 	public static void login() {
 			
-		driver.get("http://automationpractice.com/index.php");											//Navigate to url
-		//System.out.println(driver.getTitle());												//Will print the title of the page
+		
 		try {
 			driver.get("https://opensource-demo.orangehrmlive.com/");
+			System.out.println(driver.getTitle());											//Will print the title of the page
 			Thread.sleep(2000);																//Wait to see the results
 			driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");	//Sending keys to field
 			driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("admin123");//Sending keys to field

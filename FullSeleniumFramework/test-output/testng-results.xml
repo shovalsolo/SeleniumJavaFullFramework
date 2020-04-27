@@ -17,12 +17,12 @@
       <![CDATA[=======tearDown Ended=======]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15512" started-at="2020-04-25T15:55:47 EDT" finished-at="2020-04-25T15:56:03 EDT">
+  <suite name="Default suite" duration-ms="26646" started-at="2020-04-27T17:17:18 EDT" finished-at="2020-04-27T17:17:44 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15512" started-at="2020-04-25T15:55:47 EDT" finished-at="2020-04-25T15:56:03 EDT">
+    <test name="Default test" duration-ms="26646" started-at="2020-04-27T17:17:18 EDT" finished-at="2020-04-27T17:17:44 EDT">
       <class name="demo.WindowSizeChromeDemo">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:demo.WindowSizeChromeDemo@17d677df]" name="setUp" is-config="true" duration-ms="4238" started-at="2020-04-25T15:55:47 EDT" finished-at="2020-04-25T15:55:52 EDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:demo.WindowSizeChromeDemo@17d677df]" name="setUp" is-config="true" duration-ms="16314" started-at="2020-04-27T17:17:18 EDT" finished-at="2020-04-27T17:17:34 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======setUp Started=======]]>
@@ -32,14 +32,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:1, instance:demo.WindowSizeChromeDemo@17d677df]" name="login" duration-ms="10543" started-at="2020-04-25T15:55:52 EDT" finished-at="2020-04-25T15:56:02 EDT">
+        <test-method status="PASS" signature="login()[pri:1, instance:demo.WindowSizeChromeDemo@17d677df]" name="login" duration-ms="9426" started-at="2020-04-27T17:17:34 EDT" finished-at="2020-04-27T17:17:44 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======Login Ended=======]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:demo.WindowSizeChromeDemo@17d677df]" name="tearDown" is-config="true" duration-ms="692" started-at="2020-04-25T15:56:02 EDT" finished-at="2020-04-25T15:56:03 EDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:demo.WindowSizeChromeDemo@17d677df]" name="tearDown" is-config="true" duration-ms="750" started-at="2020-04-27T17:17:44 EDT" finished-at="2020-04-27T17:17:44 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======tearDown Started=======]]>
