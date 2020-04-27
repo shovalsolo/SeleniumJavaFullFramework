@@ -34,3 +34,19 @@ WAR/EAR file deployment
 4. Give the Tomcat URL http://localhost:8181/
 5. Give the WAR/EAR files should be **/*.war and the file should be in C:\Users\Solomon\.jenkins\workspace\"job-name"
 6. And Context path should be the war file without the .war
+
+
+Send Email notifications basic will send when the build has failed 
+1. Set smtp server address can be found in this site
+https://www.arclab.com/en/kb/email/list-of-smtp-and-pop3-servers-mailserver-list.html
+
+2. Check Use SMTP Authentication
+
+3. Give username and password
+
+4. Give smtp pors 465 for google
+
+5. For google need to change "Less secure app access" that is located in:
+Manage your account->Security->Less secure app access change to ON
+
+6. Test Connection
