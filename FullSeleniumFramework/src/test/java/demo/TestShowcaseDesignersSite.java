@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import screenShotPrintScreen.ScreenshotManager;
@@ -36,6 +37,8 @@ public class TestShowcaseDesignersSite {
 			htmlReporter = new ExtentHtmlReporter(projectPath+"/reports/TestShowcaseDesignersSite.html");//start reporters and setting the file name for the report
 			extent = new ExtentReports();													// create ExtentReports
 			extent.attachReporter(htmlReporter);											// Attach reporter(s)
+			ExtentTest logger1 = extent.createTest("setUp", "setUp");
+			logger1.log(Status.INFO, "setUp");
 			Reporter.log("=======setUp Ended=======",true);
 		} 
 		catch (Exception e) {
@@ -173,6 +176,8 @@ public class TestShowcaseDesignersSite {
 	public void tearDown() {																//Function to close the browser
 		try {
 			Reporter.log("=======tearDown Started=======",true);
+			ExtentTest logger2 = extent.createTest("tearDown", "tearDown");
+			logger2.log(Status.WARNING, "Running flush report last");
 			extent.flush();
 			driver.close();																	//Closing the browser
 			driver.quit();																	//Closing the process 
