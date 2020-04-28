@@ -50,12 +50,12 @@
       <![CDATA[=======tearDown Ended=======]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36629" started-at="2020-04-28T10:43:44 EDT" finished-at="2020-04-28T10:44:21 EDT">
+  <suite name="Default suite" duration-ms="40690" started-at="2020-04-28T10:55:21 EDT" finished-at="2020-04-28T10:56:01 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36629" started-at="2020-04-28T10:43:44 EDT" finished-at="2020-04-28T10:44:21 EDT">
+    <test name="Default test" duration-ms="40690" started-at="2020-04-28T10:55:21 EDT" finished-at="2020-04-28T10:56:01 EDT">
       <class name="demo.TestShowcaseDesignersSite">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="setUp" is-config="true" duration-ms="4185" started-at="2020-04-28T10:43:44 EDT" finished-at="2020-04-28T10:43:48 EDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="setUp" is-config="true" duration-ms="4332" started-at="2020-04-28T10:55:21 EDT" finished-at="2020-04-28T10:55:25 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======setUp Started=======]]>
@@ -65,7 +65,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openUrl()[pri:1, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="openUrl" duration-ms="5752" started-at="2020-04-28T10:43:48 EDT" finished-at="2020-04-28T10:43:54 EDT">
+        <test-method status="PASS" signature="openUrl()[pri:1, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="openUrl" duration-ms="5610" started-at="2020-04-28T10:55:25 EDT" finished-at="2020-04-28T10:55:31 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======openUrl Started=======]]>
@@ -75,7 +75,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method status="PASS" signature="clickOnShowcase()[pri:2, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnShowcase" duration-ms="5088" started-at="2020-04-28T10:43:54 EDT" finished-at="2020-04-28T10:43:59 EDT">
+        <test-method status="PASS" signature="clickOnShowcase()[pri:2, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnShowcase" duration-ms="5085" started-at="2020-04-28T10:55:31 EDT" finished-at="2020-04-28T10:55:36 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======clickOnShowcase Started=======]]>
@@ -85,7 +85,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- clickOnShowcase -->
-        <test-method status="PASS" signature="clickOnServices()[pri:3, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnServices" duration-ms="5070" started-at="2020-04-28T10:43:59 EDT" finished-at="2020-04-28T10:44:04 EDT">
+        <test-method status="PASS" signature="clickOnServices()[pri:3, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnServices" duration-ms="5108" started-at="2020-04-28T10:55:36 EDT" finished-at="2020-04-28T10:55:41 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======clickOnServices Started=======]]>
@@ -95,7 +95,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- clickOnServices -->
-        <test-method status="PASS" signature="clickOnDesigners()[pri:4, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnDesigners" duration-ms="5072" started-at="2020-04-28T10:44:04 EDT" finished-at="2020-04-28T10:44:09 EDT">
+        <test-method status="PASS" signature="clickOnDesigners()[pri:4, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnDesigners" duration-ms="5070" started-at="2020-04-28T10:55:41 EDT" finished-at="2020-04-28T10:55:46 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======clickOnDesigners Started=======]]>
@@ -105,7 +105,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- clickOnDesigners -->
-        <test-method status="PASS" signature="clickOnPackages()[pri:5, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnPackages" duration-ms="5070" started-at="2020-04-28T10:44:09 EDT" finished-at="2020-04-28T10:44:14 EDT">
+        <test-method status="PASS" signature="clickOnPackages()[pri:5, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnPackages" duration-ms="5066" started-at="2020-04-28T10:55:46 EDT" finished-at="2020-04-28T10:55:51 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======clickOnPackages Started=======]]>
@@ -115,7 +115,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- clickOnPackages -->
-        <test-method status="PASS" signature="clickOnContact()[pri:6, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnContact" duration-ms="5068" started-at="2020-04-28T10:44:14 EDT" finished-at="2020-04-28T10:44:19 EDT">
+        <test-method status="PASS" signature="clickOnContact()[pri:6, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnContact" duration-ms="5066" started-at="2020-04-28T10:55:51 EDT" finished-at="2020-04-28T10:55:56 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======clickOnContact Started=======]]>
@@ -125,7 +125,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- clickOnContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="tearDown" is-config="true" duration-ms="1272" started-at="2020-04-28T10:44:19 EDT" finished-at="2020-04-28T10:44:21 EDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="tearDown" is-config="true" duration-ms="5298" started-at="2020-04-28T10:55:56 EDT" finished-at="2020-04-28T10:56:01 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======tearDown Started=======]]>
