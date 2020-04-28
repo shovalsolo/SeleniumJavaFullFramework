@@ -1,5 +1,5 @@
 /* 
- * This Class is 
+ * This Class is triggered from Jenkins and is activated by a job
  */
 
 package demo;
@@ -170,7 +170,6 @@ public class TestShowcaseDesignersSite {
 			test6.fail("clickOnContact failed");
 		}																
 	}
-	
 	
 	@AfterClass																				//This will run after the class
 	public void tearDown() {																//Function to close the browser
