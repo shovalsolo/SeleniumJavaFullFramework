@@ -33,7 +33,26 @@ Commands
 
 7. docker pull selenium/standalone-firefox-debug - will pull the selenium image for firefox with an option to view and debug with vnc
 
-8. To connect to the node for debug use the following links: with port 5900 -  the commands will run the imaga
+8. To connect to the node for debug use the following links: with port 5900 -  the commands will run the image
+
+9. docker -v
+
+10. docker info
+
+11. docker --help
+
+12. docker login
+
+13. docker rmi
+
+Containers commands
+14. docker ps
+
+15. docker run
+
+16. docker start
+
+17. docker stop
 
 For chrome
 docker run -d -p 4545:4444 -p 5903:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-zirconium
