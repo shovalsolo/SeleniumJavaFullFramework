@@ -18,7 +18,7 @@ localhost:4444 - - for the firefox debug image
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Commands
+Basic Commands
 1. docker version - will return the version
 
 2. docker images - will show the images we pulled
@@ -35,24 +35,40 @@ Commands
 
 8. To connect to the node for debug use the following links: with port 5900 -  the commands will run the image
 
-9. docker -v
+9. docker --version
 
 10. docker info
 
-11. docker --help
+11. docker --help or docker command --help   - will show general help or the help of the command
 
-12. docker login
+12. docker login - will login to docker hub
 
-13. docker rmi
+13. docker rmi imageID - will delete the image
 
 Containers commands
-14. docker ps
+14. docker ps - Will give real live information about memory...
 
-15. docker run
+15. docker run imageID -
 
-16. docker start
+16. docker start imageID -
 
-17. docker stop
+17. docker stop imageID -
+
+18. docker system df - will give information about disc usage
+
+19. docker system prune - remove all unused images ***
+
+20. docker images -q   - Will return only imageID
+
+21. docker images -f
+
+22. docker images -f "dangling=false" - will show images that are not referenced to any container 
+
+23. docker images -f "dangling=false" -q  - will show images that are not referenced to any container but only the imageID
+
+24. docker run
+
+25. docker rmi -f image
 
 For chrome
 docker run -d -p 4545:4444 -p 5903:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-zirconium
