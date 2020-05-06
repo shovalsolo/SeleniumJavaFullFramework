@@ -1,0 +1,23 @@
+How to create a Jenkins server on docker
+
+1. GO to Docker hub and search for Jenkins
+
+2. In CMD run the following command: docker pull jenkins/jenkins
+
+3. To create a Jenkins docker with home directory on your machine run the following:
+docker run --name TestJen1 -p 8080:8080 -p 50000:50000 -v the Path to the directory you want:/var/jenkins_home jenkins/jenkins
+
+Example new location:
+docker run --name TestJen1 -p 8080:8080 -p 50000:50000 -v C:/Users/Solomon/Desktop/JenTest:/var/jenkins_home jenkins/jenkins
+
+or from an exist location
+docker run --name myjenkins -p 8585:8080 -p 50000:50000 -v C:/Users/Solomon/.jenkins:/var/jenkins_home jenkins/jenkins
+
+4. To create a Jenkins docker with home directory on a docker volume run the following:
+-Run command: docker volume - Will show the volume commands
+-Run command: docker volume ls
+-Run command: docker volume inspect volumName
+-Run command: docker volume create volumName - will create a volume with the name of volumName
+-Run command: docker run --name TestJen1 -p 8080:8080 -p 50000:50000 -v volumName:/var/jenkins_home jenkins/jenkins
+Example: 
+docker run --name TestJen2 -p 8383:8080 -p 50000:50000 -v myjenkins:/var/jenkins_home jenkins/jenkins
