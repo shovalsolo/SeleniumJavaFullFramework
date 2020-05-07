@@ -1,0 +1,95 @@
+Basic Commands
+1. docker version - will return the version
+
+2. docker images - will show the images we pulled
+
+3. docker pull selenium/hub - will pull the selenium hub image from https://hub.docker.com/
+
+4. docker pull selenium/standalone-chrome-debug - will pull the selenium image with an option to view and debug with vnc
+
+5. docker pull selenium/standalone-chrome - will pull the selenium image for chrome
+
+6. docker pull selenium/standalone-firefox - will pull the selenium image for firefox
+
+7. docker pull selenium/standalone-firefox-debug - will pull the selenium image for firefox with an option to view and debug with vnc
+
+8. To connect to the node for debug use the following links: with port 5900 -  the commands will run the image
+
+9. docker --version
+
+10. docker info
+
+11. docker --help or docker command --help   - will show general help or the help of the command
+
+12. docker login - will login to docker hub
+
+13. docker rmi imageID - will delete the image
+
+Containers commands
+14. docker ps - Will give real live information about memory...
+
+15. docker run imageID - will run the image or will pull it
+
+16. docker start imageID -
+
+17. docker stop imageID -
+
+18. docker system df - will give information about disc usage
+
+19. docker system prune - remove all unused images ***
+
+20. docker images -q   - Will return only imageID
+
+21. docker images -f
+
+22. docker images -f "dangling=false" - will show images that are not referenced to any container 
+
+23. docker images -f "dangling=false" -q  - will show images that are not referenced to any container but only the imageID
+
+24. docker run - will run or pull the container
+
+25. docker rmi -f image - will delete the image
+
+26. docker start ContainerName/ID  -  will start the Container
+
+27. docker stop ContainerName/ID  -  will stop the Container
+
+28. docker pause ContainerName/ID  -  will pause the Container
+
+29. docker unpause ContainerName/ID  -  will unpause the Container
+
+30. docker top ContainerName/ID  -  will show info for the Container
+
+31. docker stats ContainerName/ID  -  will show info for the Container
+
+32. docker attach ContainerName/ID  -  
+
+33. docker kill ContainerName/ID  -  
+
+34. docker rm ContainerName/ID  -  
+
+34. docker history ContainerName/ID  -  will show all history of ContainerName/ID
+
+35. docker volume - Will show the volume commands
+
+36. docker volume create volumName - will create a volume with the name of volumName
+
+37. docker ps -a  -  to check if there is a process runinnng
+
+38. docker logs -f containerID
+
+39. docker stop $(docker ps -aq) - will stop all containers
+
+40. docker rm $(docker ps -aq) - remove all containers
+
+41. docker rmi $(docker images -q) - remove all containers
+
+42.
+
+43.
+
+44.
+
+45.
+
+

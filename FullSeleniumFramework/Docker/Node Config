@@ -1,0 +1,28 @@
+selenium/hub
+		- 4444:4444
+		- 5900:5900
+
+Chromenode:
+		- 4747:4444
+		- 5902:5900
+
+Chromenode2:
+		- 4544:4444
+		- 5905:5900
+
+ChromeStandalon:
+		- 4545:4444
+		- 5903:5900
+
+
+Firefoxnode:
+		- 4546:4444
+		- 5901:5900
+
+Firefoxnode2:
+		- 4547:4444
+		- 5906:5900
+
+FirefoxStandalone:
+		- 4646:4444
+		- 5904:5900
