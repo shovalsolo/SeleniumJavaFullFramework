@@ -84,9 +84,16 @@ Containers commands
 
 41. docker rmi $(docker images -q) - remove all containers
 
-42.
+DockerFile commands
+42. docker build. - This will build if you are in the folder of the Dockerfile
 
-43.
+43. docker build -t ImageName:Tag DirectoryOfDocker - This will build if you are not in the folder of the Dockerfile and will add it to the list of images
+Example:
+docker build -t myimage1:1.0 C:/Users/Solomon/git/SeleniumJavaFullFramework/FullSeleniumFramework/Docker/DockerFiles
+To run this image do- docker run imageID
+Info:
+https://docs.docker.com/engine/reference/builder/#environment-replacement
+https://github.com/wsargent/docker-cheat-sheet#dockerfile
 
 44.
 
