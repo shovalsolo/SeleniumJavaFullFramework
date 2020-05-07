@@ -1,1 +1,6 @@
 Docker Compose
+-Is a tool for defining and running multi-container docker applications
+-It uses yaml files to configure application services(docker-compose.yml)
+-It can start all services with a single command: docker compose up
+-It can stop all services with a single command: docker compose down
+-It can scale up selected services when required

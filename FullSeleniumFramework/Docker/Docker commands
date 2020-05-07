@@ -95,8 +95,42 @@ Info:
 https://docs.docker.com/engine/reference/builder/#environment-replacement
 https://github.com/wsargent/docker-cheat-sheet#dockerfile
 
-44.
+Docker compose commands
+44. docker-compose -v - will return  version and build number
 
-45.
+45. docker-compose version - will give more information
+
+46. docker-compose --version - will return  version and build number
+
+47. docker-compose config - This should be run from the folder of the compose file
+
+48. docker-compose up -d - This will run the compose file in a detached mode need to run from the file folder
+
+49. docker-compose down - this will stop all the containers
+
+50. docker-compose up -d --scale service=number -this will scale a specific service 
+Example:
+docker-compose up -d --scale database=4
+docker-compose up -d --scale web=1
+
+51. docker-compose --help - Will show the help file
+
+52. 
+
+53. 
+
+54. 
+
+55. 
+
+56. 
+
+57. 
+
+58. 
+
+59. 
+
+60. 
 
 
