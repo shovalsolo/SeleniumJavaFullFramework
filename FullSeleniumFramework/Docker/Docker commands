@@ -130,6 +130,8 @@ Docker volume commands
 
 58. docker volume prune - will remove all the unused volumes
 
+
+Docker Swarm commands we have to use git bash**
 59. 
 
 60. 
