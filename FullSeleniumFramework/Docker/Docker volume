@@ -1,0 +1,40 @@
+Docker volume
+
+-Uses to decoupling container from storage
+-Share volume (storage/data) among different containers
+-Attache volume to container
+-On deleting container volume does not delete
+
+Docker volume commands
+1. docker volume --help - will give help options
+
+2. docker volume
+
+3. docker volume create VolumeName - Will create a volume with this VolumeName
+
+4. docker volume ls - will give the info of all the volumes
+
+5. docker volume inspect VolumeName - will give the info on the volume
+
+6. docker volume rm VolumeName - will delete the volume
+
+7. docker volume prune - will remove all the unused volumes
+
+
+
+
+How to Open ports
+1. Disable hyper-v (which will required a couple of restarts)
+dism.exe /Online /Disable-Feature:Microsoft-Hyper-V
+
+2. When you finish all the required restarts, reserve the port you want so hyper-v doesn't reserve it back
+netsh int ipv4 add excludedportrange protocol=tcp startport=50051 numberofports=1
+netsh int ipv4 delete excludedportrange protocol=tcp startport=50051 numberofports=1
+
+
+netsh int ipv4 add excludedportrange protocol=tcp startport=50000 numberofports=10
+netsh int ipv4 delete excludedportrange protocol=tcp startport=50000 numberofports=10
+
+
+3. Re-Enable hyper-V (which will require a couple of restart)
+dism.exe /Online /Enable-Feature:Microsoft-Hyper-V /All

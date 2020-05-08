@@ -115,19 +115,20 @@ docker-compose up -d --scale web=1
 
 51. docker-compose --help - Will show the help file
 
-52. 
+Docker volume commands
+52. docker volume --help - will give help options
 
-53. 
+53. docker volume
 
-54. 
+54. docker volume create VolumeName - Will create a volume with this VolumeName
 
-55. 
+55. docker volume ls - will give the info of all the volumes
 
-56. 
+56. docker volume inspect VolumeName - will give the info on the volume
 
-57. 
+57. docker volume rm VolumeName - will delete the volume
 
-58. 
+58. docker volume prune - will remove all the unused volumes
 
 59. 
 

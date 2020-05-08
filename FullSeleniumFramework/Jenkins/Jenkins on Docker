@@ -19,5 +19,6 @@ docker run --name myjenkins -p 8585:8080 -p 50000:50000 -v C:/Users/Solomon/.jen
 -Run command: docker volume inspect volumName
 -Run command: docker volume create volumName - will create a volume with the name of volumName
 -Run command: docker run --name TestJen1 -p 8080:8080 -p 50000:50000 -v volumName:/var/jenkins_home jenkins/jenkins
-Example: 
+Example for jenkins on docker with volume: 
 docker run --name TestJen2 -p 8383:8080 -p 50000:50000 -v myjenkins:/var/jenkins_home jenkins/jenkins
+docker run --name TestJen3 -p 8484:8080 -p 50001:50000 -v myjenkins:/var/jenkins_home jenkins/jenkins
