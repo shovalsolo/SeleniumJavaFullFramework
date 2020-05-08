@@ -4,3 +4,24 @@ Docker Compose
 -It can start all services with a single command: docker compose up
 -It can stop all services with a single command: docker compose down
 -It can scale up selected services when required
+
+Docker compose commands
+1. docker-compose -v - will return  version and build number
+
+2. docker-compose version - will give more information
+
+3. docker-compose --version - will return  version and build number
+
+4. docker-compose config - This should be run from the folder of the compose file and it will check for errors
+
+5. docker-compose up -d - This will run the compose file in a detached mode need to run from the file folder
+
+6. docker-compose down - this will stop all the containers
+
+7. docker-compose up -d --scale service=number -this will scale a specific service 
+Example:
+docker-compose up -d --scale database=4
+docker-compose up -d --scale web=1
+
+8. docker-compose --help - Will show the help file
+

@@ -102,7 +102,7 @@ Docker compose commands
 
 46. docker-compose --version - will return  version and build number
 
-47. docker-compose config - This should be run from the folder of the compose file
+47. docker-compose config - This should be run from the folder of the compose file and it will check for errors
 
 48. docker-compose up -d - This will run the compose file in a detached mode need to run from the file folder
 
