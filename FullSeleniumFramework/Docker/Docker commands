@@ -136,25 +136,31 @@ Docker Swarm commands we have to use git bash**
 
 60. docker-machine env manager1 - Will give info about manager1 machine (IP, name, location, tls verify)
 
-61.
+61. docker-machine ls - will show all the machines and the information
 
-62.
+62. docker-machine ip manager1 - Will give the IP of the machine
 
-63.
+63. docker-machine ssh machineName - will ssh connect to the machine
+Example:
+docker-machine ssh manager1
 
-64.
+64. docker swarm init --advertise-addr MAMAGER_IP - This will set this machine as the manager and will initialize the swarm this will run only on the manager machine
+Example:
+docker swarm init --advertise-addr 192.168.0.102
 
-65.
+65. docker node ls - will show the running nodes in the swarm this will run only in the swarm manager
 
-66.
+66. docker swarm join --token worker IP - this will add a worker to the manager swarm
+Example:
+docker swarm join --token SWMTKN-1-6ckhm0stuq1bri8stmduc2mrnay77rx5o2vfrsn2lncfwhvegh-6wigr1p69fb3vyu7qqp51xr7o 192.168.0.102:2377
 
-67.
+67. docker swarm join --token manager IP - this will add a manager to the manager swarm
 
-68.
+68. docker info - will give all the information about the swarm and the machine
 
-69.
+69. 
 
-70.
+70. 
 
 
 
