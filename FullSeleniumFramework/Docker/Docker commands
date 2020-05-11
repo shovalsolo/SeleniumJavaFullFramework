@@ -132,8 +132,29 @@ Docker volume commands
 
 
 Docker Swarm commands we have to use git bash**
-59. 
+59. docker-machine create --driver hyperv manager1 - will create a machine named manager1
 
-60. 
+60. docker-machine env manager1 - Will give info about manager1 machine (IP, name, location, tls verify)
+
+61.
+
+62.
+
+63.
+
+64.
+
+65.
+
+66.
+
+67.
+
+68.
+
+69.
+
+70.
+
 
 

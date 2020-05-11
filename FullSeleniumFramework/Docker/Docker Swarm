@@ -1,8 +1,14 @@
 Docker Swarm
 
 ***For docker swarm we have to use git bash***
+Check this first
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines
+https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v
 
 Step 1 :  Create Docker machines (to act as nodes for Docker Swarm)   
 Create one machine as manager and others as workers
 This machine is the manager
 docker-machine create --driver hyperv manager1
+
+Step2: To see the information of the machine run command - Will give info about manager1 machine (IP, name, location, tls verify)
+docker-machine env manager1
