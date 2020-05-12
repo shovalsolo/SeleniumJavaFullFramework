@@ -85,7 +85,7 @@ Step 10 :  Update service
    docker service update --image nginx:1.14.0 serviceName
 
 Step 11 :  Remove service
-   docker service rm serviceName
+docker service rm serviceName
 docker swarm leave : to leave the swarm
 docker-machine stop machineName : to stop the machine
 docker-machine rm machineName : to remove the machine

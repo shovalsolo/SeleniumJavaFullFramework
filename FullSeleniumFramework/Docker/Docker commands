@@ -131,7 +131,7 @@ Docker volume commands
 58. docker volume prune - will remove all the unused volumes
 
 
-Docker Swarm commands we have to use git bash**
+Docker Swarm commands ****we have to use git bash**
 59. docker-machine create --driver hyperv manager1 - will create a machine named manager1
 
 60. docker-machine env manager1 - Will give info about manager1 machine (IP, name, location, tls verify)
@@ -148,7 +148,7 @@ docker-machine ssh manager1
 Example:
 docker swarm init --advertise-addr 192.168.0.102
 
-65. docker node ls - will show the running nodes in the swarm this will run only in the swarm manager
+65. docker node ls - will show the running nodes in the swarm this will run only in the swarm manager and will show who is the leader in the swarm
 
 66. docker swarm join --token worker IP - this will add a worker to the manager swarm
 Example:
@@ -158,9 +158,45 @@ docker swarm join --token SWMTKN-1-6ckhm0stuq1bri8stmduc2mrnay77rx5o2vfrsn2lncfw
 
 68. docker info - will give all the information about the swarm and the machine
 
-69. docker-machine start/stop/kill machineName
+69. docker-machine start/stop/kill NodeName
 
-70. 
+70. docker-machine regenerate-certs NodeName - Will renew the certificate of the machine when we have errors
+Example:
+docker-machine regenerate-certs NodeName  manager1 worker1 worker2 
+
+71. docker service create --replicas 3 -p 80:80 --name web1 nginx - THis needs to run on the manager and it will pull and install 3 replicas of nginx on the machines
+
+72. docker service ls - this will show the service name and his information
+
+73. docker service ps serviceName - Will give the status of the service
+Example:
+docker service ps web1
+
+74. docker service scale serviceName=4 - This will add more nodes this will run only on manager swarm
+Example:
+docker service scale web1=4
+
+75. docker node inspect nodeName - Will give the node info 
+Example:
+docker node inspect manager1
+
+76. docker node inspect self - Will give the node info but only on manager node
+ 
+77. docker service update --image nginx:1.14.0 serviceName - This will update the image in the service we created
+Example:
+docker service update --image nginx:1.14.0 web1
+
+78. docker node update --availability drain NodeName -  this will shutdown the node
+
+79. docker service rm serviceName - This will remove the service
+Example:
+docker service rm web1
+
+80. docker swarm leave - This will leave the swarm
+
+81. docker-machine stop machineName - Will stop the machine
+
+82. docker-machine rm machineName - Will remove the machine
 
 
 
