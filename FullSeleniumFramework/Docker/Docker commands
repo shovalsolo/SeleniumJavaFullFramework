@@ -158,7 +158,7 @@ docker swarm join --token SWMTKN-1-6ckhm0stuq1bri8stmduc2mrnay77rx5o2vfrsn2lncfw
 
 68. docker info - will give all the information about the swarm and the machine
 
-69. 
+69. docker-machine start/stop/kill machineName
 
 70. 
 
