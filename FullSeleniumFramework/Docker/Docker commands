@@ -110,8 +110,11 @@ Docker compose commands
 
 50. docker-compose up -d --scale service=number -this will scale a specific service 
 Example:
+docker-compose -f dockerComposeFileName.yaml up -d
 docker-compose up -d --scale database=4
 docker-compose up -d --scale web=1
+docker-compose restart - Will restart the hub
+docker-compose down - Will stop and remove the containers  
 
 51. docker-compose --help - Will show the help file
 
