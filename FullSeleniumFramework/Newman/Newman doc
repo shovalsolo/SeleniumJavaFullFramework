@@ -1,0 +1,28 @@
+Newman document
+
+1. Git info url 
+https://www.npmjs.com/package/newman#html-reporter
+https://github.com/postmanlabs/newman/#json-reporter
+
+2. Need to install Node.js and npm
+
+3. Run the following command to install newman
+npm install -g newman
+
+4. To use newman we need to export the collection from postman save it to:
+C:\Users\Solomon\AppData\Local\Postman\app-7.26.0\Exports
+
+5. To run the API calls go to this folder and run the following command:
+newman run collection_name.json
+
+6. To generate an html file need to install the following
+npm install -g newman-reporter-html
+
+7. To run the collection and generate reports run the following
+ newman run collection_name.json -r cli,html,json
+ 
+8. To get environment variable we need to import it to json file from postman and run the following
+newman run collection_name.json -e environment_variable.json
+
+9. To get global variable we need to import it to json file from postman and run the following
+newman run collection_name.json -g globals_variable.json
