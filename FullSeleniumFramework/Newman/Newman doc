@@ -26,3 +26,4 @@ newman run collection_name.json -e environment_variable.json
 
 9. To get global variable we need to import it to json file from postman and run the following
 newman run collection_name.json -g globals_variable.json
+

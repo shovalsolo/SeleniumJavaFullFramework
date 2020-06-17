@@ -1,0 +1,25 @@
+Mock API Creation Document
+
+1. Go to https://github.com/typicode/json-server
+
+2. To install run the following command:
+npm install -g json-server
+
+3. Start JSON Server
+json-server --watch db.json
+
+4. Server information:
+Home
+  http://localhost:3000
+  
+Resources
+  http://localhost:3000/posts
+  http://localhost:3000/comments
+  http://localhost:3000/profile
+  
+5. The db.json file is located in:
+C:\Users\Solomon
+
+
+6. To change the port run the following to start
+json-server --watch db.json --port 3004 
