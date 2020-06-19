@@ -1,5 +1,6 @@
 /* 
  * This class is showing about inheritance
+ * The child classes will inherit the add and sub functions
  */
 
 package inheritanceDemo;
