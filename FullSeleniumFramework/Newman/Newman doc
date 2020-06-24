@@ -28,4 +28,6 @@ newman run collection_name.json -e environment_variable.json
 newman run collection_name.json -g globals_variable.json
 
 10. 
-newman run "https://api.getpostman.com/collections/<collection_id>?apikey=<my_postman_api_key>“ --environment "https://api.getpostman.com/environments/<environment_id>?apikey=<my_postman_api_key>" --export-environment "https://api.getpostman.com/environments/<environment_id>?apikey=<my_postman_api_key>" --insecure
+newman run https://api.getpostman.com/collections/<collection_id>?apikey=<my_postman_api_key> --environment https://api.getpostman.com/environments/<environment_id>?apikey=<my_postman_api_key> --export-environment https://api.getpostman.com/environments/<environment_id>?apikey=<my_postman_api_key> --insecure
+
+11. To get the environment ID go to postman web your collection and go into your environment 
