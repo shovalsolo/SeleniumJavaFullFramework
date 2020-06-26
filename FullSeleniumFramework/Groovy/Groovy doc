@@ -1,0 +1,10 @@
+Groovy doc
+
+1. After installation to check version 
+groovy -v 
+groovy --version
+
+2. To check the location of the files
+where groovy
+
+3. 
