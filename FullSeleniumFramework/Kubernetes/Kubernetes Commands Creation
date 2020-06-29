@@ -1,0 +1,37 @@
+Commands
+
+1. ls
+2. pwd
+
+SSH commands
+
+3. ssh-keygen
+4. cd .ssh/
+5. cat id_rsa.pub
+
+
+Kubernetes Commands Creation
+
+1. curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.16.0/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+2. which brew
+3. /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+4. brew doctor
+5. minikube start
+6. kubectl proxy & - Will return information about the proxy ports start command to start connection
+7. curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl
+8. chmod +x ./kubectl
+9. sudo mv ./kubectl /usr/local/bin/kubectl
+10. which kubectl – Will give you the location of the kubctl
+11. kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 –port=8080 -
+12. kubectl expose deployment hello-minikube –type=NodePort -
+14. curl $(minikube service hello-minikube –url) -
+15. --sku "Standard_LRS" -
+16. kubectl create namespace "shovaltest" – Will create new namespace called shovaltest
+17. kubectl create namespace "rkwold" -  Will create new namespace called rkwold
+18. kubectl create --file ./sftp_deploy.yaml -
+19. kubectl cluster-info – Will give you the cluster info the master, DNS, dashboard status and IP link
+20. kubectl get pod – Will return the status of the minikub pod
+21. kubectl get pods –all -namespaces -
+22. kubectl get pods --namespace kube-system – Will return all the pods
+23. kubectl get pods --namespace default - Will return the status of the minikub pod
+24. history – Gives you the history of all the commands you have used
