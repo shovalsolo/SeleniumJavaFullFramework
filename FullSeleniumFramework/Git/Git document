@@ -1,7 +1,30 @@
 Git Cli commands
 
+1. Init command will initiate the git in the selected folder
+  
+2. Status command will check the change status of the files in a comparison to the repository
+   git status
+
+3. Add command is adding the files to the staging area
+   git add test1.txt
+
+4. Commit command is adding the changes to the local repository 
+   git commit -m “comment.....”
+
+5. Push command will move the changes to the remote repository
+   git push -u origin master
+   
+6. log
+   git log
+   
+7. help
+   git --help
+
+
+
+
 Step 1 : Check if git is already installed.
-terminal - 
+terminal - CMD
 git --version
 
 Step 2 : Download and install git
