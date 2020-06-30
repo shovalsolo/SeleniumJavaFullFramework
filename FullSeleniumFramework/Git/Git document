@@ -8,6 +8,7 @@ Git Cli commands
 
 3. Add command is adding the files to the staging area
    git add test1.txt
+   git add .											- This will add everything all the changes
 
 4. Commit command is adding the changes to the local repository 
    git commit -m “comment.....”
@@ -83,6 +84,14 @@ Step 4 : Delete branch
    git branch -d “branch name”    		   — delete from local
    git push origin —delete “branch name”   — delete from remote
 
+
+
+
+Github email notifications
+--------------------------
+1. Go to one of your repositories
+2. Select settings->notifications
+3. Enter your email and save 
 
 
 For MAC only
