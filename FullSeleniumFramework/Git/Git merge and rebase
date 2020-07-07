@@ -1,3 +1,23 @@
 Git merge and rebase
 
 
+Merge: is an action that when you have changes in master and also in other branch and you want to add the changes from master to the other branch
+move to the other branch with -  git checkout “branch name” 
+git merge master
+
+git merge
+- Is a non-destructive operation
+- Existing branches are not changed in any way
+- Creates a new merge commit in the feature branch
+
+
+Rebase: is an action that 
+is an action that when you have changes in master and also in other branch and you want to add the changes from master to the other branch.
+The difference is that it is moving the branch point to the time of the rebuild
+move to the other branch with -  git checkout “branch name” 
+git rebase master
+
+git rebase
+- Moves the entire feature branch to begin on the tip of the master branch
+- Re-writes the project history
+- We get much cleaner and linear project history
