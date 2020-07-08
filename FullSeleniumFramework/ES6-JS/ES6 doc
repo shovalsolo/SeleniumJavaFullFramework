@@ -1,0 +1,15 @@
+
+
+
+
+1. install npm
+npm install -g npm
+
+2. Initialize the folder
+npm init
+
+3. install babel node modules
+npm install babel-cli babel-preset-es2015 --save-dev
+
+4.  to run compile on the main.js in src 
+npm run build
