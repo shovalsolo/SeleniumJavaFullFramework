@@ -26,6 +26,7 @@ myPromise1.then((res) => {
 
 console.log('------Returned data Resolved promise-----');
 
+
 function getData(method, url){
 	return new Promise(function(resolve, reject){
 		var xhr = new XMLHttpRequest();
