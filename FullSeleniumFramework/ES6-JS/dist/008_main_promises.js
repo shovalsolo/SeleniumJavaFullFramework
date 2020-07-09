@@ -15,7 +15,6 @@ myPromise.then((res) => console.log(res));
 console.log('------Timed Resolved promise-----');
 
 
-
 var myPromise1 = new Promise(function(resolve, reject){
 	setTimeout(()=> resolve(4, 2000));
 });
