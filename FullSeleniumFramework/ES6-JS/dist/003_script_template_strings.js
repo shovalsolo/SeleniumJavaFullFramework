@@ -1,4 +1,4 @@
-// This is an example for template strings we have to use `` backticks  
+// This is an example for template strings we have to use `` backticks 
 // `` backticks does not ignore line brake 
 
 window.onload = function (){
