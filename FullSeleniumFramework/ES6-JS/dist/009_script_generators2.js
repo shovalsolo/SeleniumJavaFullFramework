@@ -7,7 +7,7 @@ window.onload = function (){
 	console.log("--------------part 1-----regular function------");
 	
 	
-	function colorGen(){			//regular function
+	function colorGen(){			//regular function not a generator
 	
 		console.log('Green');
 		console.log('Red');
@@ -60,7 +60,7 @@ window.onload = function (){
 		var x = yield "reen";				//yield in this step will pause the iteration in this stage
 		var y = yield "ed";
 		var z = yield "all done"
-		return x + y + z;
+		return x + y + z;					//will return after adiing the params
 	}
 	
 	var myGenerat =  generat();
