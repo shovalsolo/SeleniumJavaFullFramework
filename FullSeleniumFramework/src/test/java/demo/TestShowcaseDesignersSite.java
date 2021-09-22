@@ -55,7 +55,7 @@ public class TestShowcaseDesignersSite {
 		ExtentTest test1 = extent.createTest("openUrl", "openUrl");	
 		try {
 			Reporter.log("=======openUrl Started=======",true);
-			driver.get("http://localhost:8181/Design/");									//Navigate to url
+			driver.get("https://shovalsolo.github.io/ShowcaseDesigners/");									//Navigate to url original before fix http://localhost:8181/Design/
 			System.out.println(driver.getTitle());											//Will print the title of the page
 			Thread.sleep(5000);
 			Reporter.log("=======openUrl Ended=======",true);

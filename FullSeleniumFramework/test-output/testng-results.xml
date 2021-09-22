@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
     <line>
       <![CDATA[=======setUp Started=======]]>
@@ -8,7 +8,40 @@
       <![CDATA[=======setUp Ended=======]]>
     </line>
     <line>
-      <![CDATA[=======Login Ended=======]]>
+      <![CDATA[=======openUrl Started=======]]>
+    </line>
+    <line>
+      <![CDATA[=======openUrl Ended=======]]>
+    </line>
+    <line>
+      <![CDATA[=======clickOnShowcase Started=======]]>
+    </line>
+    <line>
+      <![CDATA[=======clickOnShowcase Ended=======]]>
+    </line>
+    <line>
+      <![CDATA[=======clickOnServices Started=======]]>
+    </line>
+    <line>
+      <![CDATA[=======clickOnServices Ended=======]]>
+    </line>
+    <line>
+      <![CDATA[=======clickOnDesigners Started=======]]>
+    </line>
+    <line>
+      <![CDATA[=======clickOnDesigners Ended=======]]>
+    </line>
+    <line>
+      <![CDATA[=======clickOnPackages Started=======]]>
+    </line>
+    <line>
+      <![CDATA[=======clickOnPackages Ended=======]]>
+    </line>
+    <line>
+      <![CDATA[=======clickOnContact Started=======]]>
+    </line>
+    <line>
+      <![CDATA[=======clickOnContact Ended=======]]>
     </line>
     <line>
       <![CDATA[=======tearDown Started=======]]>
@@ -17,12 +50,12 @@
       <![CDATA[=======tearDown Ended=======]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18004" started-at="2020-05-20T14:16:58 EDT" finished-at="2020-05-20T14:17:16 EDT">
+  <suite name="Default suite" duration-ms="35279" started-at="2021-09-22T10:40:33 EDT" finished-at="2021-09-22T10:41:08 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18004" started-at="2020-05-20T14:16:58 EDT" finished-at="2020-05-20T14:17:16 EDT">
-      <class name="demo.WindowSizeChromeDemo">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:demo.WindowSizeChromeDemo@17d677df]" name="setUp" is-config="true" duration-ms="4945" started-at="2020-05-20T14:16:58 EDT" finished-at="2020-05-20T14:17:03 EDT">
+    <test name="Default test" duration-ms="35279" started-at="2021-09-22T10:40:33 EDT" finished-at="2021-09-22T10:41:08 EDT">
+      <class name="demo.TestShowcaseDesignersSite">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="setUp" is-config="true" duration-ms="2373" started-at="2021-09-22T10:40:33 EDT" finished-at="2021-09-22T10:40:35 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======setUp Started=======]]>
@@ -32,14 +65,67 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:1, instance:demo.WindowSizeChromeDemo@17d677df]" name="login" duration-ms="11191" started-at="2020-05-20T14:17:03 EDT" finished-at="2020-05-20T14:17:14 EDT">
+        <test-method status="PASS" signature="openUrl()[pri:1, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="openUrl" duration-ms="6484" started-at="2021-09-22T10:40:36 EDT" finished-at="2021-09-22T10:40:42 EDT">
           <reporter-output>
             <line>
-              <![CDATA[=======Login Ended=======]]>
+              <![CDATA[=======openUrl Started=======]]>
+            </line>
+            <line>
+              <![CDATA[=======openUrl Ended=======]]>
             </line>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:demo.WindowSizeChromeDemo@17d677df]" name="tearDown" is-config="true" duration-ms="1810" started-at="2020-05-20T14:17:14 EDT" finished-at="2020-05-20T14:17:16 EDT">
+        </test-method> <!-- openUrl -->
+        <test-method status="PASS" signature="clickOnShowcase()[pri:2, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnShowcase" duration-ms="5078" started-at="2021-09-22T10:40:42 EDT" finished-at="2021-09-22T10:40:47 EDT">
+          <reporter-output>
+            <line>
+              <![CDATA[=======clickOnShowcase Started=======]]>
+            </line>
+            <line>
+              <![CDATA[=======clickOnShowcase Ended=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clickOnShowcase -->
+        <test-method status="PASS" signature="clickOnServices()[pri:3, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnServices" duration-ms="5063" started-at="2021-09-22T10:40:47 EDT" finished-at="2021-09-22T10:40:52 EDT">
+          <reporter-output>
+            <line>
+              <![CDATA[=======clickOnServices Started=======]]>
+            </line>
+            <line>
+              <![CDATA[=======clickOnServices Ended=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clickOnServices -->
+        <test-method status="PASS" signature="clickOnDesigners()[pri:4, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnDesigners" duration-ms="5059" started-at="2021-09-22T10:40:52 EDT" finished-at="2021-09-22T10:40:57 EDT">
+          <reporter-output>
+            <line>
+              <![CDATA[=======clickOnDesigners Started=======]]>
+            </line>
+            <line>
+              <![CDATA[=======clickOnDesigners Ended=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clickOnDesigners -->
+        <test-method status="PASS" signature="clickOnPackages()[pri:5, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnPackages" duration-ms="5058" started-at="2021-09-22T10:40:57 EDT" finished-at="2021-09-22T10:41:02 EDT">
+          <reporter-output>
+            <line>
+              <![CDATA[=======clickOnPackages Started=======]]>
+            </line>
+            <line>
+              <![CDATA[=======clickOnPackages Ended=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clickOnPackages -->
+        <test-method status="PASS" signature="clickOnContact()[pri:6, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="clickOnContact" duration-ms="5064" started-at="2021-09-22T10:41:02 EDT" finished-at="2021-09-22T10:41:07 EDT">
+          <reporter-output>
+            <line>
+              <![CDATA[=======clickOnContact Started=======]]>
+            </line>
+            <line>
+              <![CDATA[=======clickOnContact Ended=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clickOnContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:demo.TestShowcaseDesignersSite@7d70d1b1]" name="tearDown" is-config="true" duration-ms="1056" started-at="2021-09-22T10:41:07 EDT" finished-at="2021-09-22T10:41:08 EDT">
           <reporter-output>
             <line>
               <![CDATA[=======tearDown Started=======]]>
@@ -49,7 +135,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- demo.WindowSizeChromeDemo -->
+      </class> <!-- demo.TestShowcaseDesignersSite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
